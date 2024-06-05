@@ -20,8 +20,9 @@ namespace BudgetTracker
         private Panel CurrentPanel;
         private void MainPage_Load(object sender, EventArgs e)
         {
-           
             OpenFormOnPress(new HomeForm(), sender);
+            ChangePanelColor(pnl_Home, sender);
+            CurrentPanel = pnl_Home;
         }
 
         private void EditBorderColorButton(Button button, object sender)
@@ -50,9 +51,9 @@ namespace BudgetTracker
         {
             if (CurrentPanel != null && CurrentPanel != panel)
             {
-                CurrentPanel.BackColor = Color.MediumPurple;
+                CurrentPanel.BackColor = ColorTranslator.FromHtml("#0C0404");
             }
-            panel.BackColor = ColorTranslator.FromHtml("#D9D9D9");
+            panel.BackColor = Color.Blue;
             CurrentPanel = panel;
         }
 
@@ -65,5 +66,8 @@ namespace BudgetTracker
         {
             ChangePanelColor(pnl_FoodExpense,sender);
         }
+
+      
+       
     }
 }

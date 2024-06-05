@@ -98,5 +98,29 @@
   <ItemGroup>
     <None Include="Resources\Line_500x500.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transportation_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electricity_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\savings_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\other_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -53,18 +53,18 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Location = new System.Drawing.Point(69, 588);
+            this.panel1.Location = new System.Drawing.Point(91, 588);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(18, 18);
+            this.panel1.Size = new System.Drawing.Size(15, 15);
             this.panel1.TabIndex = 7;
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(13)))), ((int)(((byte)(173)))));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Location = new System.Drawing.Point(69, 638);
+            this.panel2.Location = new System.Drawing.Point(91, 638);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(18, 18);
+            this.panel2.Size = new System.Drawing.Size(15, 15);
             this.panel2.TabIndex = 8;
             // 
             // panel3
@@ -73,16 +73,16 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Location = new System.Drawing.Point(495, 588);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(18, 18);
+            this.panel3.Size = new System.Drawing.Size(15, 15);
             this.panel3.TabIndex = 8;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.Blue;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(96)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Location = new System.Drawing.Point(495, 638);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(18, 18);
+            this.panel4.Size = new System.Drawing.Size(15, 15);
             this.panel4.TabIndex = 8;
             // 
             // label1
@@ -90,7 +90,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(111, 589);
+            this.label1.Location = new System.Drawing.Point(123, 587);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(254, 19);
             this.label1.TabIndex = 9;
@@ -101,7 +101,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(111, 638);
+            this.label2.Location = new System.Drawing.Point(123, 637);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(90, 19);
             this.label2.TabIndex = 10;
@@ -112,18 +112,18 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(546, 589);
+            this.label3.Location = new System.Drawing.Point(535, 587);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(181, 19);
+            this.label3.Size = new System.Drawing.Size(197, 19);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Daily expenses per category\n";
+            this.label3.Text = "Today\'s expenses per category\n";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(546, 637);
+            this.label4.Location = new System.Drawing.Point(535, 635);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 19);
             this.label4.TabIndex = 12;
@@ -132,9 +132,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BudgetTracker.Properties.Resources.Line_500x500;
-            this.pictureBox1.Location = new System.Drawing.Point(764, 574);
+            this.pictureBox1.Location = new System.Drawing.Point(764, 593);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 102);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 69);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
@@ -143,7 +143,7 @@
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(880, 607);
+            this.label5.Location = new System.Drawing.Point(868, 605);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(93, 63);
             this.label5.TabIndex = 14;

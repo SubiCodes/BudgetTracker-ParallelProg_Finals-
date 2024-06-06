@@ -49,6 +49,15 @@
     <Compile Include="ArtanPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomBorderTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FoodExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FoodExpenses.Designer.cs">
+      <DependentUpon>FoodExpenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +72,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FoodExpenses.resx">
+      <DependentUpon>FoodExpenses.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
     </EmbeddedResource>

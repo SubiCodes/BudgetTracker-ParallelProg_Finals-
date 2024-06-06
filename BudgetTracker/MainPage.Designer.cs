@@ -29,63 +29,63 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pnl_FoodExpense = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pnl_Home = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DisplayPanel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pnl_AddExpense = new System.Windows.Forms.Panel();
+            this.lbl_AddExpense = new System.Windows.Forms.Label();
+            this.pb_AddExpense = new System.Windows.Forms.PictureBox();
+            this.pnl_OtherExpenses = new System.Windows.Forms.Panel();
+            this.lbl_OtherExpenses = new System.Windows.Forms.Label();
+            this.pb_OtherExpenses = new System.Windows.Forms.PictureBox();
+            this.pnl_Savings = new System.Windows.Forms.Panel();
+            this.lbl_Savings = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pb_Savings = new System.Windows.Forms.PictureBox();
+            this.pnl_Bills = new System.Windows.Forms.Panel();
+            this.lbl_Bills = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pb_Bills = new System.Windows.Forms.PictureBox();
+            this.pnl_OnlinePayments = new System.Windows.Forms.Panel();
+            this.lbl_OnlinePayments = new System.Windows.Forms.Label();
+            this.pb_OnlinePayments = new System.Windows.Forms.PictureBox();
+            this.pnl_TranspoExpenses = new System.Windows.Forms.Panel();
+            this.lbl_TranspoExpense = new System.Windows.Forms.Label();
+            this.pb_TranspoExpense = new System.Windows.Forms.PictureBox();
+            this.pnl_FoodExpense = new System.Windows.Forms.Panel();
+            this.lbl__FoodExpense = new System.Windows.Forms.Label();
+            this.pb_FoodExpense = new System.Windows.Forms.PictureBox();
+            this.pnl_Home = new System.Windows.Forms.Panel();
+            this.lbl_Home = new System.Windows.Forms.Label();
+            this.pb_Home = new System.Windows.Forms.PictureBox();
+            this.DisplayPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.pnl_FoodExpense.SuspendLayout();
-            this.pnl_Home.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.pnl_AddExpense.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AddExpense)).BeginInit();
+            this.pnl_OtherExpenses.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_OtherExpenses)).BeginInit();
+            this.pnl_Savings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Savings)).BeginInit();
+            this.pnl_Bills.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Bills)).BeginInit();
+            this.pnl_OnlinePayments.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_OnlinePayments)).BeginInit();
+            this.pnl_TranspoExpenses.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_TranspoExpense)).BeginInit();
+            this.pnl_FoodExpense.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_FoodExpense)).BeginInit();
+            this.pnl_Home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Home)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel7);
-            this.panel1.Controls.Add(this.panel6);
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.panel4);
+            this.panel1.Controls.Add(this.pnl_AddExpense);
+            this.panel1.Controls.Add(this.pnl_OtherExpenses);
+            this.panel1.Controls.Add(this.pnl_Savings);
+            this.panel1.Controls.Add(this.pnl_Bills);
+            this.panel1.Controls.Add(this.pnl_OnlinePayments);
+            this.panel1.Controls.Add(this.pnl_TranspoExpenses);
             this.panel1.Controls.Add(this.pnl_FoodExpense);
             this.panel1.Controls.Add(this.pnl_Home);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -94,290 +94,154 @@
             this.panel1.Size = new System.Drawing.Size(200, 681);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // pnl_AddExpense
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.pictureBox8);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 595);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 85);
-            this.panel2.TabIndex = 7;
+            this.pnl_AddExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_AddExpense.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_AddExpense.Controls.Add(this.lbl_AddExpense);
+            this.pnl_AddExpense.Controls.Add(this.pb_AddExpense);
+            this.pnl_AddExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_AddExpense.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_AddExpense.Location = new System.Drawing.Point(0, 595);
+            this.pnl_AddExpense.Name = "pnl_AddExpense";
+            this.pnl_AddExpense.Size = new System.Drawing.Size(200, 85);
+            this.pnl_AddExpense.TabIndex = 7;
+            this.pnl_AddExpense.Click += new System.EventHandler(this.pnl_AddExpense_Click);
             // 
-            // panel8
+            // lbl_AddExpense
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.pictureBox7);
-            this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Location = new System.Drawing.Point(0, 510);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(200, 85);
-            this.panel8.TabIndex = 6;
+            this.lbl_AddExpense.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_AddExpense.ForeColor = System.Drawing.Color.White;
+            this.lbl_AddExpense.Location = new System.Drawing.Point(88, 16);
+            this.lbl_AddExpense.Name = "lbl_AddExpense";
+            this.lbl_AddExpense.Size = new System.Drawing.Size(98, 51);
+            this.lbl_AddExpense.TabIndex = 5;
+            this.lbl_AddExpense.Text = "Add Expenses";
+            this.lbl_AddExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_AddExpense.Click += new System.EventHandler(this.lbl_AddExpense_Click);
             // 
-            // panel7
+            // pb_AddExpense
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label6);
-            this.panel7.Controls.Add(this.pictureBox10);
-            this.panel7.Controls.Add(this.pictureBox6);
-            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 425);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 85);
-            this.panel7.TabIndex = 5;
+            this.pb_AddExpense.Image = global::BudgetTracker.Properties.Resources.add_icon;
+            this.pb_AddExpense.Location = new System.Drawing.Point(15, 17);
+            this.pb_AddExpense.Name = "pb_AddExpense";
+            this.pb_AddExpense.Size = new System.Drawing.Size(50, 50);
+            this.pb_AddExpense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_AddExpense.TabIndex = 4;
+            this.pb_AddExpense.TabStop = false;
+            this.pb_AddExpense.Click += new System.EventHandler(this.pb_AddExpense_Click);
             // 
-            // label6
+            // pnl_OtherExpenses
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(95, 33);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 22);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Savings";
+            this.pnl_OtherExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_OtherExpenses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_OtherExpenses.Controls.Add(this.lbl_OtherExpenses);
+            this.pnl_OtherExpenses.Controls.Add(this.pb_OtherExpenses);
+            this.pnl_OtherExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_OtherExpenses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_OtherExpenses.Location = new System.Drawing.Point(0, 510);
+            this.pnl_OtherExpenses.Name = "pnl_OtherExpenses";
+            this.pnl_OtherExpenses.Size = new System.Drawing.Size(200, 85);
+            this.pnl_OtherExpenses.TabIndex = 6;
+            this.pnl_OtherExpenses.Click += new System.EventHandler(this.pnl_OtherExpenses_Click);
             // 
-            // panel6
+            // lbl_OtherExpenses
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.pictureBox9);
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(0, 340);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 85);
-            this.panel6.TabIndex = 4;
+            this.lbl_OtherExpenses.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_OtherExpenses.ForeColor = System.Drawing.Color.White;
+            this.lbl_OtherExpenses.Location = new System.Drawing.Point(88, 17);
+            this.lbl_OtherExpenses.Name = "lbl_OtherExpenses";
+            this.lbl_OtherExpenses.Size = new System.Drawing.Size(98, 51);
+            this.lbl_OtherExpenses.TabIndex = 5;
+            this.lbl_OtherExpenses.Text = "Other Expenses";
+            this.lbl_OtherExpenses.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_OtherExpenses.Click += new System.EventHandler(this.lbl_OtherExpenses_Click);
             // 
-            // label5
+            // pb_OtherExpenses
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(95, 33);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 22);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Bills";
+            this.pb_OtherExpenses.Image = global::BudgetTracker.Properties.Resources.other_icon;
+            this.pb_OtherExpenses.Location = new System.Drawing.Point(15, 17);
+            this.pb_OtherExpenses.Name = "pb_OtherExpenses";
+            this.pb_OtherExpenses.Size = new System.Drawing.Size(50, 50);
+            this.pb_OtherExpenses.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_OtherExpenses.TabIndex = 4;
+            this.pb_OtherExpenses.TabStop = false;
+            this.pb_OtherExpenses.Click += new System.EventHandler(this.pb_OtherExpenses_Click);
             // 
-            // panel5
+            // pnl_Savings
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.pictureBox4);
-            this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 255);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 85);
-            this.panel5.TabIndex = 3;
+            this.pnl_Savings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_Savings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_Savings.Controls.Add(this.lbl_Savings);
+            this.pnl_Savings.Controls.Add(this.pictureBox10);
+            this.pnl_Savings.Controls.Add(this.pb_Savings);
+            this.pnl_Savings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_Savings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Savings.Location = new System.Drawing.Point(0, 425);
+            this.pnl_Savings.Name = "pnl_Savings";
+            this.pnl_Savings.Size = new System.Drawing.Size(200, 85);
+            this.pnl_Savings.TabIndex = 5;
+            this.pnl_Savings.Click += new System.EventHandler(this.pnl_Savings_Click);
             // 
-            // panel4
+            // lbl_Savings
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 170);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 85);
-            this.panel4.TabIndex = 2;
+            this.lbl_Savings.AutoSize = true;
+            this.lbl_Savings.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Savings.ForeColor = System.Drawing.Color.White;
+            this.lbl_Savings.Location = new System.Drawing.Point(95, 33);
+            this.lbl_Savings.Name = "lbl_Savings";
+            this.lbl_Savings.Size = new System.Drawing.Size(72, 22);
+            this.lbl_Savings.TabIndex = 6;
+            this.lbl_Savings.Text = "Savings";
+            this.lbl_Savings.Click += new System.EventHandler(this.lbl_Savings_Click);
             // 
-            // pnl_FoodExpense
+            // pictureBox10
             // 
-            this.pnl_FoodExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.pnl_FoodExpense.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_FoodExpense.Controls.Add(this.label2);
-            this.pnl_FoodExpense.Controls.Add(this.pictureBox2);
-            this.pnl_FoodExpense.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnl_FoodExpense.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_FoodExpense.Location = new System.Drawing.Point(0, 85);
-            this.pnl_FoodExpense.Name = "pnl_FoodExpense";
-            this.pnl_FoodExpense.Size = new System.Drawing.Size(200, 85);
-            this.pnl_FoodExpense.TabIndex = 1;
-            this.pnl_FoodExpense.Click += new System.EventHandler(this.pnl_FoodExpense_Click);
+            this.pictureBox10.Image = global::BudgetTracker.Properties.Resources.food_icon;
+            this.pictureBox10.Location = new System.Drawing.Point(15, -213);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(72, 83);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox10.TabIndex = 1;
+            this.pictureBox10.TabStop = false;
             // 
-            // label2
+            // pb_Savings
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(88, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 51);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Food Expenses";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pb_Savings.Image = global::BudgetTracker.Properties.Resources.savings_icon;
+            this.pb_Savings.Location = new System.Drawing.Point(15, 17);
+            this.pb_Savings.Name = "pb_Savings";
+            this.pb_Savings.Size = new System.Drawing.Size(50, 50);
+            this.pb_Savings.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Savings.TabIndex = 4;
+            this.pb_Savings.TabStop = false;
+            this.pb_Savings.Click += new System.EventHandler(this.pb_Savings_Click);
             // 
-            // pnl_Home
+            // pnl_Bills
             // 
-            this.pnl_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
-            this.pnl_Home.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnl_Home.Controls.Add(this.label1);
-            this.pnl_Home.Controls.Add(this.pictureBox1);
-            this.pnl_Home.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pnl_Home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnl_Home.Location = new System.Drawing.Point(0, 0);
-            this.pnl_Home.Name = "pnl_Home";
-            this.pnl_Home.Size = new System.Drawing.Size(200, 85);
-            this.pnl_Home.TabIndex = 0;
-            this.pnl_Home.Click += new System.EventHandler(this.pnl_Home_Click);
+            this.pnl_Bills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_Bills.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_Bills.Controls.Add(this.lbl_Bills);
+            this.pnl_Bills.Controls.Add(this.pictureBox9);
+            this.pnl_Bills.Controls.Add(this.pb_Bills);
+            this.pnl_Bills.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_Bills.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Bills.Location = new System.Drawing.Point(0, 340);
+            this.pnl_Bills.Name = "pnl_Bills";
+            this.pnl_Bills.Size = new System.Drawing.Size(200, 85);
+            this.pnl_Bills.TabIndex = 4;
+            this.pnl_Bills.Click += new System.EventHandler(this.pnl_Bills_Click);
             // 
-            // label1
+            // lbl_Bills
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(95, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 22);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Home";
-            // 
-            // DisplayPanel
-            // 
-            this.DisplayPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.DisplayPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DisplayPanel.Location = new System.Drawing.Point(200, 0);
-            this.DisplayPanel.Name = "DisplayPanel";
-            this.DisplayPanel.Size = new System.Drawing.Size(1084, 681);
-            this.DisplayPanel.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(88, 14);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 51);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Transpo Expenses";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(88, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 51);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Online Payments";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(88, 17);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 51);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Other Expenses";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(88, 16);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 51);
-            this.label8.TabIndex = 5;
-            this.label8.Text = "Add Expenses";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::BudgetTracker.Properties.Resources.add_icon;
-            this.pictureBox8.Location = new System.Drawing.Point(15, 1);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::BudgetTracker.Properties.Resources.other_icon;
-            this.pictureBox7.Location = new System.Drawing.Point(15, -1);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox7.TabIndex = 4;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::BudgetTracker.Properties.Resources.savings_icon;
-            this.pictureBox6.Location = new System.Drawing.Point(15, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::BudgetTracker.Properties.Resources.electricity_icon;
-            this.pictureBox5.Location = new System.Drawing.Point(15, -1);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::BudgetTracker.Properties.Resources.internet_icon;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::BudgetTracker.Properties.Resources.transportation_icon;
-            this.pictureBox3.Location = new System.Drawing.Point(15, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BudgetTracker.Properties.Resources.food_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BudgetTracker.Properties.Resources.home_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.lbl_Bills.AutoSize = true;
+            this.lbl_Bills.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Bills.ForeColor = System.Drawing.Color.White;
+            this.lbl_Bills.Location = new System.Drawing.Point(95, 33);
+            this.lbl_Bills.Name = "lbl_Bills";
+            this.lbl_Bills.Size = new System.Drawing.Size(44, 22);
+            this.lbl_Bills.TabIndex = 5;
+            this.lbl_Bills.Text = "Bills";
+            this.lbl_Bills.Click += new System.EventHandler(this.lbl_Bills_Click);
             // 
             // pictureBox9
             // 
@@ -389,15 +253,173 @@
             this.pictureBox9.TabIndex = 1;
             this.pictureBox9.TabStop = false;
             // 
-            // pictureBox10
+            // pb_Bills
             // 
-            this.pictureBox10.Image = global::BudgetTracker.Properties.Resources.food_icon;
-            this.pictureBox10.Location = new System.Drawing.Point(15, -213);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(72, 83);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox10.TabIndex = 1;
-            this.pictureBox10.TabStop = false;
+            this.pb_Bills.Image = global::BudgetTracker.Properties.Resources.electricity_icon;
+            this.pb_Bills.Location = new System.Drawing.Point(15, 15);
+            this.pb_Bills.Name = "pb_Bills";
+            this.pb_Bills.Size = new System.Drawing.Size(50, 50);
+            this.pb_Bills.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Bills.TabIndex = 4;
+            this.pb_Bills.TabStop = false;
+            this.pb_Bills.Click += new System.EventHandler(this.pb_Bills_Click);
+            // 
+            // pnl_OnlinePayments
+            // 
+            this.pnl_OnlinePayments.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_OnlinePayments.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_OnlinePayments.Controls.Add(this.lbl_OnlinePayments);
+            this.pnl_OnlinePayments.Controls.Add(this.pb_OnlinePayments);
+            this.pnl_OnlinePayments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_OnlinePayments.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_OnlinePayments.Location = new System.Drawing.Point(0, 255);
+            this.pnl_OnlinePayments.Name = "pnl_OnlinePayments";
+            this.pnl_OnlinePayments.Size = new System.Drawing.Size(200, 85);
+            this.pnl_OnlinePayments.TabIndex = 3;
+            this.pnl_OnlinePayments.Click += new System.EventHandler(this.pnl_OnlinePayments_Click);
+            // 
+            // lbl_OnlinePayments
+            // 
+            this.lbl_OnlinePayments.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_OnlinePayments.ForeColor = System.Drawing.Color.White;
+            this.lbl_OnlinePayments.Location = new System.Drawing.Point(88, 14);
+            this.lbl_OnlinePayments.Name = "lbl_OnlinePayments";
+            this.lbl_OnlinePayments.Size = new System.Drawing.Size(98, 51);
+            this.lbl_OnlinePayments.TabIndex = 4;
+            this.lbl_OnlinePayments.Text = "Online Payments";
+            this.lbl_OnlinePayments.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_OnlinePayments.Click += new System.EventHandler(this.lbl_OnlinePayments_Click);
+            // 
+            // pb_OnlinePayments
+            // 
+            this.pb_OnlinePayments.Image = global::BudgetTracker.Properties.Resources.internet_icon;
+            this.pb_OnlinePayments.Location = new System.Drawing.Point(15, 15);
+            this.pb_OnlinePayments.Name = "pb_OnlinePayments";
+            this.pb_OnlinePayments.Size = new System.Drawing.Size(50, 50);
+            this.pb_OnlinePayments.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_OnlinePayments.TabIndex = 3;
+            this.pb_OnlinePayments.TabStop = false;
+            this.pb_OnlinePayments.Click += new System.EventHandler(this.pb_OnlinePayments_Click);
+            // 
+            // pnl_TranspoExpenses
+            // 
+            this.pnl_TranspoExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_TranspoExpenses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_TranspoExpenses.Controls.Add(this.lbl_TranspoExpense);
+            this.pnl_TranspoExpenses.Controls.Add(this.pb_TranspoExpense);
+            this.pnl_TranspoExpenses.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_TranspoExpenses.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_TranspoExpenses.Location = new System.Drawing.Point(0, 170);
+            this.pnl_TranspoExpenses.Name = "pnl_TranspoExpenses";
+            this.pnl_TranspoExpenses.Size = new System.Drawing.Size(200, 85);
+            this.pnl_TranspoExpenses.TabIndex = 2;
+            this.pnl_TranspoExpenses.Click += new System.EventHandler(this.pnl_TranspoExpenses_Click);
+            // 
+            // lbl_TranspoExpense
+            // 
+            this.lbl_TranspoExpense.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TranspoExpense.ForeColor = System.Drawing.Color.White;
+            this.lbl_TranspoExpense.Location = new System.Drawing.Point(88, 14);
+            this.lbl_TranspoExpense.Name = "lbl_TranspoExpense";
+            this.lbl_TranspoExpense.Size = new System.Drawing.Size(98, 51);
+            this.lbl_TranspoExpense.TabIndex = 3;
+            this.lbl_TranspoExpense.Text = "Transpo Expenses";
+            this.lbl_TranspoExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl_TranspoExpense.Click += new System.EventHandler(this.lbl_TranspoExpense_Click);
+            // 
+            // pb_TranspoExpense
+            // 
+            this.pb_TranspoExpense.Image = global::BudgetTracker.Properties.Resources.transportation_icon;
+            this.pb_TranspoExpense.Location = new System.Drawing.Point(15, 15);
+            this.pb_TranspoExpense.Name = "pb_TranspoExpense";
+            this.pb_TranspoExpense.Size = new System.Drawing.Size(50, 50);
+            this.pb_TranspoExpense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_TranspoExpense.TabIndex = 2;
+            this.pb_TranspoExpense.TabStop = false;
+            this.pb_TranspoExpense.Click += new System.EventHandler(this.pb_TranspoExpense_Click);
+            // 
+            // pnl_FoodExpense
+            // 
+            this.pnl_FoodExpense.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_FoodExpense.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_FoodExpense.Controls.Add(this.lbl__FoodExpense);
+            this.pnl_FoodExpense.Controls.Add(this.pb_FoodExpense);
+            this.pnl_FoodExpense.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_FoodExpense.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_FoodExpense.Location = new System.Drawing.Point(0, 85);
+            this.pnl_FoodExpense.Name = "pnl_FoodExpense";
+            this.pnl_FoodExpense.Size = new System.Drawing.Size(200, 85);
+            this.pnl_FoodExpense.TabIndex = 1;
+            this.pnl_FoodExpense.Click += new System.EventHandler(this.pnl_FoodExpense_Click);
+            // 
+            // lbl__FoodExpense
+            // 
+            this.lbl__FoodExpense.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl__FoodExpense.ForeColor = System.Drawing.Color.White;
+            this.lbl__FoodExpense.Location = new System.Drawing.Point(88, 17);
+            this.lbl__FoodExpense.Name = "lbl__FoodExpense";
+            this.lbl__FoodExpense.Size = new System.Drawing.Size(98, 51);
+            this.lbl__FoodExpense.TabIndex = 2;
+            this.lbl__FoodExpense.Text = "Food Expenses";
+            this.lbl__FoodExpense.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbl__FoodExpense.Click += new System.EventHandler(this.lbl__FoodExpense_Click);
+            // 
+            // pb_FoodExpense
+            // 
+            this.pb_FoodExpense.Image = global::BudgetTracker.Properties.Resources.food_icon;
+            this.pb_FoodExpense.Location = new System.Drawing.Point(15, 18);
+            this.pb_FoodExpense.Name = "pb_FoodExpense";
+            this.pb_FoodExpense.Size = new System.Drawing.Size(50, 50);
+            this.pb_FoodExpense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_FoodExpense.TabIndex = 1;
+            this.pb_FoodExpense.TabStop = false;
+            this.pb_FoodExpense.Click += new System.EventHandler(this.pb_FoodExpense_Click);
+            // 
+            // pnl_Home
+            // 
+            this.pnl_Home.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(4)))), ((int)(((byte)(4)))));
+            this.pnl_Home.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnl_Home.Controls.Add(this.lbl_Home);
+            this.pnl_Home.Controls.Add(this.pb_Home);
+            this.pnl_Home.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pnl_Home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnl_Home.Location = new System.Drawing.Point(0, 0);
+            this.pnl_Home.Name = "pnl_Home";
+            this.pnl_Home.Size = new System.Drawing.Size(200, 85);
+            this.pnl_Home.TabIndex = 0;
+            this.pnl_Home.Click += new System.EventHandler(this.pnl_Home_Click);
+            // 
+            // lbl_Home
+            // 
+            this.lbl_Home.AutoSize = true;
+            this.lbl_Home.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_Home.ForeColor = System.Drawing.Color.White;
+            this.lbl_Home.Location = new System.Drawing.Point(95, 33);
+            this.lbl_Home.Name = "lbl_Home";
+            this.lbl_Home.Size = new System.Drawing.Size(59, 22);
+            this.lbl_Home.TabIndex = 1;
+            this.lbl_Home.Text = "Home";
+            this.lbl_Home.Click += new System.EventHandler(this.lbl_Home_Click);
+            // 
+            // pb_Home
+            // 
+            this.pb_Home.Image = global::BudgetTracker.Properties.Resources.home_icon;
+            this.pb_Home.Location = new System.Drawing.Point(15, 19);
+            this.pb_Home.Name = "pb_Home";
+            this.pb_Home.Size = new System.Drawing.Size(50, 50);
+            this.pb_Home.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_Home.TabIndex = 0;
+            this.pb_Home.TabStop = false;
+            this.pb_Home.Click += new System.EventHandler(this.pb_Home_Click);
+            // 
+            // DisplayPanel
+            // 
+            this.DisplayPanel.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DisplayPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DisplayPanel.Location = new System.Drawing.Point(200, 0);
+            this.DisplayPanel.Name = "DisplayPanel";
+            this.DisplayPanel.Size = new System.Drawing.Size(1084, 681);
+            this.DisplayPanel.TabIndex = 1;
             // 
             // MainPage
             // 
@@ -411,27 +433,27 @@
             this.Text = "Money-Wise";
             this.Load += new System.EventHandler(this.MainPage_Load);
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
+            this.pnl_AddExpense.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_AddExpense)).EndInit();
+            this.pnl_OtherExpenses.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_OtherExpenses)).EndInit();
+            this.pnl_Savings.ResumeLayout(false);
+            this.pnl_Savings.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Savings)).EndInit();
+            this.pnl_Bills.ResumeLayout(false);
+            this.pnl_Bills.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Bills)).EndInit();
+            this.pnl_OnlinePayments.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_OnlinePayments)).EndInit();
+            this.pnl_TranspoExpenses.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_TranspoExpense)).EndInit();
             this.pnl_FoodExpense.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pb_FoodExpense)).EndInit();
             this.pnl_Home.ResumeLayout(false);
             this.pnl_Home.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_Home)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -440,30 +462,30 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel DisplayPanel;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnl_OtherExpenses;
+        private System.Windows.Forms.Panel pnl_Savings;
+        private System.Windows.Forms.Panel pnl_Bills;
+        private System.Windows.Forms.Panel pnl_OnlinePayments;
+        private System.Windows.Forms.Panel pnl_TranspoExpenses;
         private System.Windows.Forms.Panel pnl_FoodExpense;
         private System.Windows.Forms.Panel pnl_Home;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Panel pnl_AddExpense;
+        private System.Windows.Forms.PictureBox pb_Home;
+        private System.Windows.Forms.PictureBox pb_AddExpense;
+        private System.Windows.Forms.PictureBox pb_OtherExpenses;
+        private System.Windows.Forms.PictureBox pb_Savings;
+        private System.Windows.Forms.PictureBox pb_Bills;
+        private System.Windows.Forms.PictureBox pb_OnlinePayments;
+        private System.Windows.Forms.PictureBox pb_TranspoExpense;
+        private System.Windows.Forms.PictureBox pb_FoodExpense;
+        private System.Windows.Forms.Label lbl_Home;
+        private System.Windows.Forms.Label lbl_Savings;
+        private System.Windows.Forms.Label lbl_Bills;
+        private System.Windows.Forms.Label lbl__FoodExpense;
+        private System.Windows.Forms.Label lbl_OtherExpenses;
+        private System.Windows.Forms.Label lbl_OnlinePayments;
+        private System.Windows.Forms.Label lbl_TranspoExpense;
+        private System.Windows.Forms.Label lbl_AddExpense;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox9;
     }

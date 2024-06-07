@@ -172,6 +172,9 @@ namespace BudgetTracker
             ChangePanelColor(pnl_AddExpense, sender);
         }
 
-        
+        private void pnl_Home_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

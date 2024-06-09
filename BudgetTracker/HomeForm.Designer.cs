@@ -226,7 +226,7 @@
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(135, 59);
             this.label20.TabIndex = 3;
-            this.label20.Text = "Online Expense";
+            this.label20.Text = "Online Expenses";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox8
@@ -316,7 +316,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(135, 59);
             this.label8.TabIndex = 7;
-            this.label8.Text = "Trasnpo  Expense";
+            this.label8.Text = "Trasnpo  Expenses";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label7

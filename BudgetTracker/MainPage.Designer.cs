@@ -387,7 +387,7 @@
             this.pnl_Home.Name = "pnl_Home";
             this.pnl_Home.Size = new System.Drawing.Size(200, 85);
             this.pnl_Home.TabIndex = 0;
-            this.pnl_Home.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_Home_Paint);
+       
             // 
             // lbl_Home
             // 

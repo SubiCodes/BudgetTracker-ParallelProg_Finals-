@@ -160,21 +160,21 @@ namespace BudgetTracker
         }
         private void pnl_AddExpense_Click(object sender, EventArgs e)
         {
-            ChangePanelColor(pnl_AddExpense, sender);
+            var AddExpenseForm = new Add_Expense();
+            AddExpenseForm.Show();
         }
         private void pb_AddExpense_Click(object sender, EventArgs e)
         {
-            ChangePanelColor(pnl_AddExpense, sender);
+            var AddExpenseForm = new Add_Expense();
+            AddExpenseForm.Show();
         }
 
         private void lbl_AddExpense_Click(object sender, EventArgs e)
         {
-            ChangePanelColor(pnl_AddExpense, sender);
+            var AddExpenseForm = new Add_Expense();
+            AddExpenseForm.Show();
         }
 
-        private void pnl_Home_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+     
     }
 }

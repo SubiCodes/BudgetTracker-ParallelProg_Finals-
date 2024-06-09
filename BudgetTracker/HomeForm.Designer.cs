@@ -59,6 +59,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.artanPanel8 = new BudgetTracker.ArtanPanel();
+            this.label21 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.artanPanel4 = new BudgetTracker.ArtanPanel();
@@ -69,7 +70,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.artanPanel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -312,7 +312,7 @@
             this.label8.BackColor = System.Drawing.Color.BlueViolet;
             this.label8.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(121, 27);
+            this.label8.Location = new System.Drawing.Point(124, 27);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(135, 59);
             this.label8.TabIndex = 7;
@@ -460,6 +460,18 @@
             this.artanPanel8.Size = new System.Drawing.Size(545, 162);
             this.artanPanel8.TabIndex = 6;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label21.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(206, 73);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(257, 60);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "₱ 100.00";
+            // 
             // label10
             // 
             this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
@@ -584,18 +596,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.label21.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.White;
-            this.label21.Location = new System.Drawing.Point(206, 73);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(257, 60);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "₱ 100.00";
             // 
             // HomeForm
             // 

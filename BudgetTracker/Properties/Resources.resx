@@ -118,34 +118,73 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="electricity_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\electricity_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="SavingsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SavingsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MonthlyBills" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonthlyBills.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="savings_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\savings_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="food_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\food_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bills-check-bill-invoice-svgrepo-com (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bills-check-bill-invoice-svgrepo-com (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="other_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\other_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="home_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Line_500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Line_500x500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="internet_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\internet_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="transportation_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\transportation_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FoodIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\FoodIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Line_500x500weight2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Line_500x500weight2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MonthlyBills1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MonthlyBills1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TranspoIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TranspoIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OnlineIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OnlineIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="transportation_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\transportation_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="add_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="24-hoursIconFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24-hoursIconFinal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OtherIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OtherIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Line_500x500" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Line_500x500.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="24HoursIconResized" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24HoursIconResized.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electricity_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electricity_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="24HoursIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\24HoursIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="other_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\other_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="food_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\food_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="internet_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\internet_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PesoSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PesoSign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

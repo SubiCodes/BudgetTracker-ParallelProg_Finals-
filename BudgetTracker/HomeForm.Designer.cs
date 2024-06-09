@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -37,58 +36,57 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.artanPanel3 = new BudgetTracker.ArtanPanel();
-            this.artanPanel15 = new BudgetTracker.ArtanPanel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.tbMonthlyBills = new System.Windows.Forms.TextBox();
-            this.artanPanel2 = new BudgetTracker.ArtanPanel();
-            this.artanPanel16 = new BudgetTracker.ArtanPanel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.tbMonthlyExpenses = new System.Windows.Forms.TextBox();
-            this.artanPanel8 = new BudgetTracker.ArtanPanel();
-            this.artanPanel14 = new BudgetTracker.ArtanPanel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.tbSavings = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.artanPanel7 = new BudgetTracker.ArtanPanel();
-            this.artanPanel10 = new BudgetTracker.ArtanPanel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.tbOther = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.artanPanel6 = new BudgetTracker.ArtanPanel();
-            this.artanPanel13 = new BudgetTracker.ArtanPanel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.tbTranspo = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.artanPanel5 = new BudgetTracker.ArtanPanel();
-            this.artanPanel11 = new BudgetTracker.ArtanPanel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.tbOnline = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.artanPanel3 = new BudgetTracker.ArtanPanel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.artanPanel2 = new BudgetTracker.ArtanPanel();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.artanPanel8 = new BudgetTracker.ArtanPanel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.artanPanel4 = new BudgetTracker.ArtanPanel();
-            this.tbFood = new System.Windows.Forms.TextBox();
-            this.artanPanel12 = new BudgetTracker.ArtanPanel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.artanPanel1 = new BudgetTracker.ArtanPanel();
-            this.artanPanel9 = new BudgetTracker.ArtanPanel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tbTodaysExpenses = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label21 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.artanPanel3.SuspendLayout();
-            this.artanPanel15.SuspendLayout();
-            this.artanPanel2.SuspendLayout();
-            this.artanPanel16.SuspendLayout();
-            this.artanPanel8.SuspendLayout();
-            this.artanPanel14.SuspendLayout();
             this.artanPanel7.SuspendLayout();
-            this.artanPanel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.artanPanel6.SuspendLayout();
-            this.artanPanel13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.artanPanel5.SuspendLayout();
-            this.artanPanel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.artanPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.artanPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.artanPanel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.artanPanel4.SuspendLayout();
-            this.artanPanel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.artanPanel1.SuspendLayout();
-            this.artanPanel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -171,16 +169,6 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Selected Page";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::BudgetTracker.Properties.Resources.Line_500x500;
-            this.pictureBox1.Location = new System.Drawing.Point(764, 593);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
-            // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -191,12 +179,176 @@
             this.label5.TabIndex = 14;
             this.label5.Text = "About Us / Developers";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::BudgetTracker.Properties.Resources.Line_500x500;
+            this.pictureBox1.Location = new System.Drawing.Point(764, 593);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 69);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
+            // artanPanel7
+            // 
+            this.artanPanel7.BackColor = System.Drawing.Color.White;
+            this.artanPanel7.BorderRadius = 50;
+            this.artanPanel7.Controls.Add(this.label19);
+            this.artanPanel7.Controls.Add(this.label20);
+            this.artanPanel7.Controls.Add(this.pictureBox8);
+            this.artanPanel7.ForeColor = System.Drawing.Color.Black;
+            this.artanPanel7.GradientAngle = 90F;
+            this.artanPanel7.GradientBottomColor = System.Drawing.Color.BlueViolet;
+            this.artanPanel7.GradientTopColor = System.Drawing.Color.BlueViolet;
+            this.artanPanel7.Location = new System.Drawing.Point(752, 34);
+            this.artanPanel7.Name = "artanPanel7";
+            this.artanPanel7.Size = new System.Drawing.Size(263, 162);
+            this.artanPanel7.TabIndex = 7;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.BlueViolet;
+            this.label19.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(126, 94);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(114, 26);
+            this.label19.TabIndex = 6;
+            this.label19.Text = "₱ 100.00";
+            // 
+            // label20
+            // 
+            this.label20.BackColor = System.Drawing.Color.BlueViolet;
+            this.label20.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(125, 32);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(135, 59);
+            this.label20.TabIndex = 3;
+            this.label20.Text = "Online Expense";
+            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.BlueViolet;
+            this.pictureBox8.Image = global::BudgetTracker.Properties.Resources.OnlineIcon;
+            this.pictureBox8.Location = new System.Drawing.Point(15, 31);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 2;
+            this.pictureBox8.TabStop = false;
+            // 
+            // artanPanel6
+            // 
+            this.artanPanel6.BackColor = System.Drawing.Color.White;
+            this.artanPanel6.BorderRadius = 50;
+            this.artanPanel6.Controls.Add(this.label9);
+            this.artanPanel6.Controls.Add(this.label18);
+            this.artanPanel6.Controls.Add(this.pictureBox7);
+            this.artanPanel6.ForeColor = System.Drawing.Color.Black;
+            this.artanPanel6.GradientAngle = 90F;
+            this.artanPanel6.GradientBottomColor = System.Drawing.Color.BlueViolet;
+            this.artanPanel6.GradientTopColor = System.Drawing.Color.BlueViolet;
+            this.artanPanel6.Location = new System.Drawing.Point(752, 216);
+            this.artanPanel6.Name = "artanPanel6";
+            this.artanPanel6.Size = new System.Drawing.Size(263, 162);
+            this.artanPanel6.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.BlueViolet;
+            this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(126, 94);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(114, 26);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "₱ 100.00";
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.BlueViolet;
+            this.label18.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(125, 32);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(135, 59);
+            this.label18.TabIndex = 3;
+            this.label18.Text = "Other Expenses";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.BackColor = System.Drawing.Color.BlueViolet;
+            this.pictureBox7.Image = global::BudgetTracker.Properties.Resources.OtherIcon;
+            this.pictureBox7.Location = new System.Drawing.Point(15, 31);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 2;
+            this.pictureBox7.TabStop = false;
+            // 
+            // artanPanel5
+            // 
+            this.artanPanel5.BackColor = System.Drawing.Color.White;
+            this.artanPanel5.BorderRadius = 50;
+            this.artanPanel5.Controls.Add(this.label8);
+            this.artanPanel5.Controls.Add(this.label7);
+            this.artanPanel5.Controls.Add(this.pictureBox6);
+            this.artanPanel5.ForeColor = System.Drawing.Color.Black;
+            this.artanPanel5.GradientAngle = 90F;
+            this.artanPanel5.GradientBottomColor = System.Drawing.Color.BlueViolet;
+            this.artanPanel5.GradientTopColor = System.Drawing.Color.BlueViolet;
+            this.artanPanel5.Location = new System.Drawing.Point(470, 216);
+            this.artanPanel5.Name = "artanPanel5";
+            this.artanPanel5.Size = new System.Drawing.Size(263, 162);
+            this.artanPanel5.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.BlueViolet;
+            this.label8.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(121, 27);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(135, 59);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Trasnpo  Expense";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.BlueViolet;
+            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(126, 94);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 26);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "₱ 100.00";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BackColor = System.Drawing.Color.BlueViolet;
+            this.pictureBox6.Image = global::BudgetTracker.Properties.Resources.TranspoIcon;
+            this.pictureBox6.Location = new System.Drawing.Point(15, 31);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
             // artanPanel3
             // 
             this.artanPanel3.BackColor = System.Drawing.Color.White;
             this.artanPanel3.BorderRadius = 50;
-            this.artanPanel3.Controls.Add(this.artanPanel15);
-            this.artanPanel3.Controls.Add(this.tbMonthlyBills);
+            this.artanPanel3.Controls.Add(this.label16);
+            this.artanPanel3.Controls.Add(this.label13);
+            this.artanPanel3.Controls.Add(this.pictureBox4);
             this.artanPanel3.ForeColor = System.Drawing.Color.Black;
             this.artanPanel3.GradientAngle = 90F;
             this.artanPanel3.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
@@ -206,52 +358,48 @@
             this.artanPanel3.Size = new System.Drawing.Size(370, 162);
             this.artanPanel3.TabIndex = 2;
             // 
-            // artanPanel15
+            // label16
             // 
-            this.artanPanel15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.artanPanel15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("artanPanel15.BackgroundImage")));
-            this.artanPanel15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.artanPanel15.BorderRadius = 50;
-            this.artanPanel15.Controls.Add(this.textBox8);
-            this.artanPanel15.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel15.GradientAngle = 90F;
-            this.artanPanel15.GradientBottomColor = System.Drawing.Color.Empty;
-            this.artanPanel15.GradientTopColor = System.Drawing.Color.Empty;
-            this.artanPanel15.Location = new System.Drawing.Point(16, 26);
-            this.artanPanel15.Name = "artanPanel15";
-            this.artanPanel15.Size = new System.Drawing.Size(112, 115);
-            this.artanPanel15.TabIndex = 7;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label16.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(135, 84);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(154, 35);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "₱ 100.00";
             // 
-            // textBox8
+            // label13
             // 
-            this.textBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox8.Location = new System.Drawing.Point(134, 47);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(216, 31);
-            this.textBox8.TabIndex = 0;
-            this.textBox8.Text = "Today\'s Expenses";
+            this.label13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label13.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(135, 25);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(185, 59);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Monthly Bills";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tbMonthlyBills
+            // pictureBox4
             // 
-            this.tbMonthlyBills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.tbMonthlyBills.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbMonthlyBills.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMonthlyBills.ForeColor = System.Drawing.SystemColors.Menu;
-            this.tbMonthlyBills.Location = new System.Drawing.Point(134, 26);
-            this.tbMonthlyBills.Name = "tbMonthlyBills";
-            this.tbMonthlyBills.Size = new System.Drawing.Size(186, 24);
-            this.tbMonthlyBills.TabIndex = 15;
-            this.tbMonthlyBills.Text = "Monthly Bills:";
+            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.pictureBox4.Image = global::BudgetTracker.Properties.Resources.bills_check_bill_invoice_svgrepo_com__1_;
+            this.pictureBox4.Location = new System.Drawing.Point(14, 25);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(115, 115);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 4;
+            this.pictureBox4.TabStop = false;
             // 
             // artanPanel2
             // 
             this.artanPanel2.BackColor = System.Drawing.Color.White;
             this.artanPanel2.BorderRadius = 50;
-            this.artanPanel2.Controls.Add(this.artanPanel16);
-            this.artanPanel2.Controls.Add(this.tbMonthlyExpenses);
+            this.artanPanel2.Controls.Add(this.label15);
+            this.artanPanel2.Controls.Add(this.label12);
+            this.artanPanel2.Controls.Add(this.pictureBox3);
             this.artanPanel2.ForeColor = System.Drawing.Color.Black;
             this.artanPanel2.GradientAngle = 90F;
             this.artanPanel2.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
@@ -261,52 +409,48 @@
             this.artanPanel2.Size = new System.Drawing.Size(370, 162);
             this.artanPanel2.TabIndex = 1;
             // 
-            // artanPanel16
+            // label15
             // 
-            this.artanPanel16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.artanPanel16.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("artanPanel16.BackgroundImage")));
-            this.artanPanel16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.artanPanel16.BorderRadius = 50;
-            this.artanPanel16.Controls.Add(this.textBox9);
-            this.artanPanel16.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel16.GradientAngle = 90F;
-            this.artanPanel16.GradientBottomColor = System.Drawing.Color.Empty;
-            this.artanPanel16.GradientTopColor = System.Drawing.Color.Empty;
-            this.artanPanel16.Location = new System.Drawing.Point(16, 29);
-            this.artanPanel16.Name = "artanPanel16";
-            this.artanPanel16.Size = new System.Drawing.Size(112, 112);
-            this.artanPanel16.TabIndex = 8;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label15.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(135, 78);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(154, 35);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "₱ 100.00";
             // 
-            // textBox9
+            // label12
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox9.Location = new System.Drawing.Point(134, 47);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(216, 31);
-            this.textBox9.TabIndex = 0;
-            this.textBox9.Text = "Today\'s Expenses";
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label12.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(135, 19);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(214, 59);
+            this.label12.TabIndex = 5;
+            this.label12.Text = "Monthly Expense";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tbMonthlyExpenses
+            // pictureBox3
             // 
-            this.tbMonthlyExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.tbMonthlyExpenses.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbMonthlyExpenses.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMonthlyExpenses.ForeColor = System.Drawing.SystemColors.Menu;
-            this.tbMonthlyExpenses.Location = new System.Drawing.Point(135, 29);
-            this.tbMonthlyExpenses.Name = "tbMonthlyExpenses";
-            this.tbMonthlyExpenses.Size = new System.Drawing.Size(228, 24);
-            this.tbMonthlyExpenses.TabIndex = 3;
-            this.tbMonthlyExpenses.Text = "Monthly Expenses:";
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.pictureBox3.Image = global::BudgetTracker.Properties.Resources.calendar;
+            this.pictureBox3.Location = new System.Drawing.Point(14, 19);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(115, 116);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // artanPanel8
             // 
             this.artanPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(106)))), ((int)(((byte)(13)))), ((int)(((byte)(173)))));
             this.artanPanel8.BorderRadius = 50;
-            this.artanPanel8.Controls.Add(this.artanPanel14);
-            this.artanPanel8.Controls.Add(this.tbSavings);
+            this.artanPanel8.Controls.Add(this.label21);
+            this.artanPanel8.Controls.Add(this.label10);
+            this.artanPanel8.Controls.Add(this.pictureBox9);
             this.artanPanel8.ForeColor = System.Drawing.Color.Black;
             this.artanPanel8.GradientAngle = 90F;
             this.artanPanel8.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
@@ -316,220 +460,36 @@
             this.artanPanel8.Size = new System.Drawing.Size(545, 162);
             this.artanPanel8.TabIndex = 6;
             // 
-            // artanPanel14
+            // label10
             // 
-            this.artanPanel14.BackColor = System.Drawing.Color.White;
-            this.artanPanel14.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("artanPanel14.BackgroundImage")));
-            this.artanPanel14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.artanPanel14.BorderRadius = 50;
-            this.artanPanel14.Controls.Add(this.textBox7);
-            this.artanPanel14.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel14.GradientAngle = 90F;
-            this.artanPanel14.GradientBottomColor = System.Drawing.Color.Empty;
-            this.artanPanel14.GradientTopColor = System.Drawing.Color.Empty;
-            this.artanPanel14.Location = new System.Drawing.Point(16, 26);
-            this.artanPanel14.Name = "artanPanel14";
-            this.artanPanel14.Size = new System.Drawing.Size(103, 115);
-            this.artanPanel14.TabIndex = 6;
+            this.label10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label10.Font = new System.Drawing.Font("Cascadia Code", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(248, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(173, 59);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Savings";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox7
+            // pictureBox9
             // 
-            this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox7.Location = new System.Drawing.Point(134, 47);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(216, 31);
-            this.textBox7.TabIndex = 0;
-            this.textBox7.Text = "Today\'s Expenses";
-            // 
-            // tbSavings
-            // 
-            this.tbSavings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.tbSavings.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSavings.Font = new System.Drawing.Font("Showcard Gothic", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSavings.ForeColor = System.Drawing.SystemColors.Menu;
-            this.tbSavings.Location = new System.Drawing.Point(125, 26);
-            this.tbSavings.Name = "tbSavings";
-            this.tbSavings.Size = new System.Drawing.Size(299, 46);
-            this.tbSavings.TabIndex = 16;
-            this.tbSavings.Text = "Savings:";
-            // 
-            // artanPanel7
-            // 
-            this.artanPanel7.BackColor = System.Drawing.Color.White;
-            this.artanPanel7.BorderRadius = 50;
-            this.artanPanel7.Controls.Add(this.artanPanel10);
-            this.artanPanel7.Controls.Add(this.tbOther);
-            this.artanPanel7.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel7.GradientAngle = 90F;
-            this.artanPanel7.GradientBottomColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel7.GradientTopColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel7.Location = new System.Drawing.Point(752, 216);
-            this.artanPanel7.Name = "artanPanel7";
-            this.artanPanel7.Size = new System.Drawing.Size(263, 162);
-            this.artanPanel7.TabIndex = 4;
-            // 
-            // artanPanel10
-            // 
-            this.artanPanel10.BackColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("artanPanel10.BackgroundImage")));
-            this.artanPanel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.artanPanel10.BorderRadius = 50;
-            this.artanPanel10.Controls.Add(this.textBox3);
-            this.artanPanel10.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel10.GradientAngle = 90F;
-            this.artanPanel10.GradientBottomColor = System.Drawing.Color.Empty;
-            this.artanPanel10.GradientTopColor = System.Drawing.Color.Empty;
-            this.artanPanel10.Location = new System.Drawing.Point(12, 19);
-            this.artanPanel10.Name = "artanPanel10";
-            this.artanPanel10.Size = new System.Drawing.Size(91, 106);
-            this.artanPanel10.TabIndex = 2;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox3.Location = new System.Drawing.Point(134, 47);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 31);
-            this.textBox3.TabIndex = 0;
-            this.textBox3.Text = "Today\'s Expenses";
-            // 
-            // tbOther
-            // 
-            this.tbOther.BackColor = System.Drawing.Color.BlueViolet;
-            this.tbOther.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbOther.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.tbOther.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.tbOther.Location = new System.Drawing.Point(109, 19);
-            this.tbOther.Multiline = true;
-            this.tbOther.Name = "tbOther";
-            this.tbOther.Size = new System.Drawing.Size(130, 63);
-            this.tbOther.TabIndex = 5;
-            this.tbOther.Text = "Other Expenses:";
-            // 
-            // artanPanel6
-            // 
-            this.artanPanel6.BackColor = System.Drawing.Color.White;
-            this.artanPanel6.BorderRadius = 50;
-            this.artanPanel6.Controls.Add(this.artanPanel13);
-            this.artanPanel6.Controls.Add(this.tbTranspo);
-            this.artanPanel6.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel6.GradientAngle = 90F;
-            this.artanPanel6.GradientBottomColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel6.GradientTopColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel6.Location = new System.Drawing.Point(470, 216);
-            this.artanPanel6.Name = "artanPanel6";
-            this.artanPanel6.Size = new System.Drawing.Size(263, 162);
-            this.artanPanel6.TabIndex = 5;
-            // 
-            // artanPanel13
-            // 
-            this.artanPanel13.BackColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("artanPanel13.BackgroundImage")));
-            this.artanPanel13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.artanPanel13.BorderRadius = 50;
-            this.artanPanel13.Controls.Add(this.textBox6);
-            this.artanPanel13.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel13.GradientAngle = 90F;
-            this.artanPanel13.GradientBottomColor = System.Drawing.Color.Empty;
-            this.artanPanel13.GradientTopColor = System.Drawing.Color.Empty;
-            this.artanPanel13.Location = new System.Drawing.Point(16, 19);
-            this.artanPanel13.Name = "artanPanel13";
-            this.artanPanel13.Size = new System.Drawing.Size(94, 106);
-            this.artanPanel13.TabIndex = 5;
-            // 
-            // textBox6
-            // 
-            this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox6.Location = new System.Drawing.Point(134, 47);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(216, 31);
-            this.textBox6.TabIndex = 0;
-            this.textBox6.Text = "Today\'s Expenses";
-            // 
-            // tbTranspo
-            // 
-            this.tbTranspo.BackColor = System.Drawing.Color.BlueViolet;
-            this.tbTranspo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTranspo.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTranspo.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.tbTranspo.Location = new System.Drawing.Point(116, 22);
-            this.tbTranspo.Multiline = true;
-            this.tbTranspo.Name = "tbTranspo";
-            this.tbTranspo.Size = new System.Drawing.Size(135, 59);
-            this.tbTranspo.TabIndex = 15;
-            this.tbTranspo.Text = "Transpo\'s\r\n Expenses:\r\n";
-            // 
-            // artanPanel5
-            // 
-            this.artanPanel5.BackColor = System.Drawing.Color.White;
-            this.artanPanel5.BorderRadius = 50;
-            this.artanPanel5.Controls.Add(this.artanPanel11);
-            this.artanPanel5.Controls.Add(this.tbOnline);
-            this.artanPanel5.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel5.GradientAngle = 90F;
-            this.artanPanel5.GradientBottomColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel5.GradientTopColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel5.Location = new System.Drawing.Point(752, 34);
-            this.artanPanel5.Name = "artanPanel5";
-            this.artanPanel5.Size = new System.Drawing.Size(263, 162);
-            this.artanPanel5.TabIndex = 4;
-            // 
-            // artanPanel11
-            // 
-            this.artanPanel11.BackColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("artanPanel11.BackgroundImage")));
-            this.artanPanel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.artanPanel11.BorderRadius = 50;
-            this.artanPanel11.Controls.Add(this.textBox4);
-            this.artanPanel11.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel11.GradientAngle = 90F;
-            this.artanPanel11.GradientBottomColor = System.Drawing.Color.Empty;
-            this.artanPanel11.GradientTopColor = System.Drawing.Color.Empty;
-            this.artanPanel11.Location = new System.Drawing.Point(12, 23);
-            this.artanPanel11.Name = "artanPanel11";
-            this.artanPanel11.Size = new System.Drawing.Size(91, 101);
-            this.artanPanel11.TabIndex = 3;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox4.Location = new System.Drawing.Point(134, 47);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 31);
-            this.textBox4.TabIndex = 0;
-            this.textBox4.Text = "Today\'s Expenses";
-            // 
-            // tbOnline
-            // 
-            this.tbOnline.BackColor = System.Drawing.Color.BlueViolet;
-            this.tbOnline.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbOnline.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.tbOnline.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.tbOnline.Location = new System.Drawing.Point(109, 23);
-            this.tbOnline.Multiline = true;
-            this.tbOnline.Name = "tbOnline";
-            this.tbOnline.Size = new System.Drawing.Size(143, 59);
-            this.tbOnline.TabIndex = 17;
-            this.tbOnline.Text = "Online Expenses:";
+            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.pictureBox9.Image = global::BudgetTracker.Properties.Resources.SavingsIcon;
+            this.pictureBox9.Location = new System.Drawing.Point(29, 8);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(140, 140);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 0;
+            this.pictureBox9.TabStop = false;
             // 
             // artanPanel4
             // 
             this.artanPanel4.BackColor = System.Drawing.Color.White;
             this.artanPanel4.BorderRadius = 50;
-            this.artanPanel4.Controls.Add(this.tbFood);
-            this.artanPanel4.Controls.Add(this.artanPanel12);
+            this.artanPanel4.Controls.Add(this.label17);
+            this.artanPanel4.Controls.Add(this.label6);
+            this.artanPanel4.Controls.Add(this.pictureBox5);
             this.artanPanel4.ForeColor = System.Drawing.Color.Black;
             this.artanPanel4.GradientAngle = 90F;
             this.artanPanel4.GradientBottomColor = System.Drawing.Color.BlueViolet;
@@ -539,53 +499,48 @@
             this.artanPanel4.Size = new System.Drawing.Size(263, 162);
             this.artanPanel4.TabIndex = 3;
             // 
-            // tbFood
+            // label17
             // 
-            this.tbFood.BackColor = System.Drawing.Color.BlueViolet;
-            this.tbFood.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbFood.Font = new System.Drawing.Font("Showcard Gothic", 15.75F, System.Drawing.FontStyle.Bold);
-            this.tbFood.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.tbFood.Location = new System.Drawing.Point(116, 23);
-            this.tbFood.Multiline = true;
-            this.tbFood.Name = "tbFood";
-            this.tbFood.Size = new System.Drawing.Size(135, 82);
-            this.tbFood.TabIndex = 16;
-            this.tbFood.Text = "Food\'s Expenses:";
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.BlueViolet;
+            this.label17.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(124, 94);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(114, 26);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "₱ 100.00";
             // 
-            // artanPanel12
+            // label6
             // 
-            this.artanPanel12.BackColor = System.Drawing.Color.BlueViolet;
-            this.artanPanel12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("artanPanel12.BackgroundImage")));
-            this.artanPanel12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.artanPanel12.BorderRadius = 50;
-            this.artanPanel12.Controls.Add(this.textBox5);
-            this.artanPanel12.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel12.GradientAngle = 90F;
-            this.artanPanel12.GradientBottomColor = System.Drawing.Color.Empty;
-            this.artanPanel12.GradientTopColor = System.Drawing.Color.Empty;
-            this.artanPanel12.Location = new System.Drawing.Point(16, 23);
-            this.artanPanel12.Name = "artanPanel12";
-            this.artanPanel12.Size = new System.Drawing.Size(94, 101);
-            this.artanPanel12.TabIndex = 4;
+            this.label6.BackColor = System.Drawing.Color.BlueViolet;
+            this.label6.Font = new System.Drawing.Font("Cascadia Code", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(125, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(135, 59);
+            this.label6.TabIndex = 3;
+            this.label6.Text = "Food Expenses";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox5
+            // pictureBox5
             // 
-            this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox5.Location = new System.Drawing.Point(134, 47);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(216, 31);
-            this.textBox5.TabIndex = 0;
-            this.textBox5.Text = "Today\'s Expenses";
+            this.pictureBox5.BackColor = System.Drawing.Color.BlueViolet;
+            this.pictureBox5.Image = global::BudgetTracker.Properties.Resources.FoodIcon;
+            this.pictureBox5.Location = new System.Drawing.Point(15, 31);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // artanPanel1
             // 
             this.artanPanel1.BackColor = System.Drawing.Color.White;
             this.artanPanel1.BorderRadius = 50;
-            this.artanPanel1.Controls.Add(this.artanPanel9);
-            this.artanPanel1.Controls.Add(this.tbTodaysExpenses);
+            this.artanPanel1.Controls.Add(this.label14);
+            this.artanPanel1.Controls.Add(this.label11);
+            this.artanPanel1.Controls.Add(this.pictureBox2);
             this.artanPanel1.ForeColor = System.Drawing.Color.Black;
             this.artanPanel1.GradientAngle = 90F;
             this.artanPanel1.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
@@ -595,62 +550,62 @@
             this.artanPanel1.Size = new System.Drawing.Size(370, 162);
             this.artanPanel1.TabIndex = 0;
             // 
-            // artanPanel9
+            // label14
             // 
-            this.artanPanel9.BackColor = System.Drawing.Color.White;
-            this.artanPanel9.BorderRadius = 50;
-            this.artanPanel9.Controls.Add(this.textBox2);
-            this.artanPanel9.Controls.Add(this.textBox1);
-            this.artanPanel9.ForeColor = System.Drawing.Color.Black;
-            this.artanPanel9.GradientAngle = 90F;
-            this.artanPanel9.GradientBottomColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.artanPanel9.GradientTopColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.artanPanel9.Location = new System.Drawing.Point(13, 18);
-            this.artanPanel9.Name = "artanPanel9";
-            this.artanPanel9.Size = new System.Drawing.Size(115, 126);
-            this.artanPanel9.TabIndex = 1;
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label14.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(135, 83);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(154, 35);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "₱ 100.00";
             // 
-            // textBox2
+            // label11
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox2.Location = new System.Drawing.Point(3, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(109, 118);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "24";
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label11.Font = new System.Drawing.Font("Cascadia Code SemiBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(135, 24);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(185, 59);
+            this.label11.TabIndex = 4;
+            this.label11.Text = "Todays Expense";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // textBox1
+            // pictureBox2
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.Menu;
-            this.textBox1.Location = new System.Drawing.Point(134, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(216, 31);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Today\'s Expenses";
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.pictureBox2.Image = global::BudgetTracker.Properties.Resources._24_hoursIconFinal;
+            this.pictureBox2.Location = new System.Drawing.Point(14, 24);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(115, 116);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
             // 
-            // tbTodaysExpenses
+            // label21
             // 
-            this.tbTodaysExpenses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.tbTodaysExpenses.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbTodaysExpenses.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTodaysExpenses.ForeColor = System.Drawing.SystemColors.Menu;
-            this.tbTodaysExpenses.Location = new System.Drawing.Point(135, 23);
-            this.tbTodaysExpenses.Name = "tbTodaysExpenses";
-            this.tbTodaysExpenses.Size = new System.Drawing.Size(216, 24);
-            this.tbTodaysExpenses.TabIndex = 0;
-            this.tbTodaysExpenses.Text = "Today\'s Expenses:";
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.label21.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(206, 73);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(257, 60);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "₱ 100.00";
             // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(1068, 701);
+            this.ClientSize = new System.Drawing.Size(1068, 681);
+            this.Controls.Add(this.artanPanel7);
+            this.Controls.Add(this.artanPanel6);
+            this.Controls.Add(this.artanPanel5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -664,46 +619,35 @@
             this.Controls.Add(this.artanPanel3);
             this.Controls.Add(this.artanPanel2);
             this.Controls.Add(this.artanPanel8);
-            this.Controls.Add(this.artanPanel7);
-            this.Controls.Add(this.artanPanel6);
-            this.Controls.Add(this.artanPanel5);
             this.Controls.Add(this.artanPanel4);
             this.Controls.Add(this.artanPanel1);
             this.Name = "HomeForm";
             this.Text = "HomeForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.artanPanel3.ResumeLayout(false);
-            this.artanPanel3.PerformLayout();
-            this.artanPanel15.ResumeLayout(false);
-            this.artanPanel15.PerformLayout();
-            this.artanPanel2.ResumeLayout(false);
-            this.artanPanel2.PerformLayout();
-            this.artanPanel16.ResumeLayout(false);
-            this.artanPanel16.PerformLayout();
-            this.artanPanel8.ResumeLayout(false);
-            this.artanPanel8.PerformLayout();
-            this.artanPanel14.ResumeLayout(false);
-            this.artanPanel14.PerformLayout();
             this.artanPanel7.ResumeLayout(false);
             this.artanPanel7.PerformLayout();
-            this.artanPanel10.ResumeLayout(false);
-            this.artanPanel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.artanPanel6.ResumeLayout(false);
             this.artanPanel6.PerformLayout();
-            this.artanPanel13.ResumeLayout(false);
-            this.artanPanel13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.artanPanel5.ResumeLayout(false);
             this.artanPanel5.PerformLayout();
-            this.artanPanel11.ResumeLayout(false);
-            this.artanPanel11.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.artanPanel3.ResumeLayout(false);
+            this.artanPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.artanPanel2.ResumeLayout(false);
+            this.artanPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.artanPanel8.ResumeLayout(false);
+            this.artanPanel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.artanPanel4.ResumeLayout(false);
             this.artanPanel4.PerformLayout();
-            this.artanPanel12.ResumeLayout(false);
-            this.artanPanel12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.artanPanel1.ResumeLayout(false);
             this.artanPanel1.PerformLayout();
-            this.artanPanel9.ResumeLayout(false);
-            this.artanPanel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -713,9 +657,6 @@
 
         private ArtanPanel artanPanel1;
         private ArtanPanel artanPanel4;
-        private ArtanPanel artanPanel5;
-        private ArtanPanel artanPanel6;
-        private ArtanPanel artanPanel7;
         private ArtanPanel artanPanel8;
         private ArtanPanel artanPanel2;
         private ArtanPanel artanPanel3;
@@ -729,30 +670,32 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox tbMonthlyBills;
-        private System.Windows.Forms.TextBox tbMonthlyExpenses;
-        private System.Windows.Forms.TextBox tbSavings;
-        private System.Windows.Forms.TextBox tbTodaysExpenses;
-        private System.Windows.Forms.TextBox tbOther;
-        private System.Windows.Forms.TextBox tbTranspo;
-        private System.Windows.Forms.TextBox tbOnline;
-        private System.Windows.Forms.TextBox tbFood;
-        private ArtanPanel artanPanel9;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private ArtanPanel artanPanel11;
-        private System.Windows.Forms.TextBox textBox4;
-        private ArtanPanel artanPanel10;
-        private System.Windows.Forms.TextBox textBox3;
-        private ArtanPanel artanPanel12;
-        private System.Windows.Forms.TextBox textBox5;
-        private ArtanPanel artanPanel13;
-        private System.Windows.Forms.TextBox textBox6;
-        private ArtanPanel artanPanel16;
-        private System.Windows.Forms.TextBox textBox9;
-        private ArtanPanel artanPanel15;
-        private System.Windows.Forms.TextBox textBox8;
-        private ArtanPanel artanPanel14;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private ArtanPanel artanPanel5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private ArtanPanel artanPanel6;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private ArtanPanel artanPanel7;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label21;
     }
 }

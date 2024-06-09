@@ -134,5 +134,44 @@
   <ItemGroup>
     <None Include="Resources\add_icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24HoursIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24HoursIconResized.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24-hoursIconFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonthlyBills.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MonthlyBills1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bills-check-bill-invoice-svgrepo-com %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FoodIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TranspoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OnlineIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OtherIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SavingsIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PesoSign.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

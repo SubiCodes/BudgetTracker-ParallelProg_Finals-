@@ -19,7 +19,7 @@ namespace BudgetTracker
         }
         private Form CurrentForm;
         private Panel CurrentPanel;
- 
+        private Add_Expense AddExpenseForm = new Add_Expense();
         private void MainPage_Load(object sender, EventArgs e)
         {
             OpenFormOnPress(new HomeForm(), sender);
@@ -95,84 +95,118 @@ namespace BudgetTracker
         private void pnl_TranspoExpenses_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_TranspoExpenses, sender);
+            OpenFormOnPress(new TranspoExpenses(), sender);
         }
         private void pb_TranspoExpense_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_TranspoExpenses, sender);
+            OpenFormOnPress(new TranspoExpenses(), sender);
         }
 
         private void lbl_TranspoExpense_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_TranspoExpenses, sender);
+            OpenFormOnPress(new TranspoExpenses(), sender);
         }
         private void pnl_OnlinePayments_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OnlinePayments, sender);
+            OpenFormOnPress(new OnlinePayments(), sender);
         }
 
         private void pb_OnlinePayments_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OnlinePayments, sender);
+            OpenFormOnPress(new OnlinePayments(), sender);
         }
 
         private void lbl_OnlinePayments_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OnlinePayments, sender);
+            OpenFormOnPress(new OnlinePayments(), sender);
         }
         private void pnl_Bills_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_Bills, sender);
+            OpenFormOnPress(new Bills(), sender);
         }
+    
         private void pb_Bills_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_Bills, sender);
+            OpenFormOnPress(new Bills(), sender);
         }
 
         private void lbl_Bills_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_Bills, sender);
+            OpenFormOnPress(new Bills(), sender);
         }
         private void pnl_Savings_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_Savings, sender);
+            OpenFormOnPress(new Savings(), sender);
         }
         private void pb_Savings_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_Savings, sender);
+            OpenFormOnPress(new Savings(), sender);
         }
 
         private void lbl_Savings_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_Savings, sender);
+            OpenFormOnPress(new Savings(), sender);
         }
         private void pnl_OtherExpenses_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OtherExpenses, sender);
+            OpenFormOnPress(new OtherExpenses(), sender);
         }
         private void pb_OtherExpenses_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OtherExpenses, sender);
+            OpenFormOnPress(new OtherExpenses(), sender);
         }
 
         private void lbl_OtherExpenses_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OtherExpenses, sender);
+            OpenFormOnPress(new OtherExpenses(), sender);
         }
         private void pnl_AddExpense_Click(object sender, EventArgs e)
         {
-            var AddExpenseForm = new Add_Expense();
-            AddExpenseForm.Show();
+            if (!AddExpenseForm.Visible)
+            {
+                AddExpenseForm.Show();
+            }
+            else
+            {
+                AddExpenseForm.BringToFront();
+            }
         }
         private void pb_AddExpense_Click(object sender, EventArgs e)
         {
-            var AddExpenseForm = new Add_Expense();
-            AddExpenseForm.Show();
+            if (!AddExpenseForm.Visible)
+            {
+                AddExpenseForm.Show();
+            }
+            else
+            {
+                AddExpenseForm.BringToFront();
+            }
         }
 
         private void lbl_AddExpense_Click(object sender, EventArgs e)
         {
-            var AddExpenseForm = new Add_Expense();
-            AddExpenseForm.Show();
+            if (!AddExpenseForm.Visible)
+            {
+                AddExpenseForm.Show();
+            }
+            else
+            {
+                AddExpenseForm.BringToFront();
+            }
         }
 
      

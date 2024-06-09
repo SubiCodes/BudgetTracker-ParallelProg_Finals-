@@ -190,7 +190,7 @@
             this.lbl_Savings.ForeColor = System.Drawing.Color.White;
             this.lbl_Savings.Location = new System.Drawing.Point(95, 33);
             this.lbl_Savings.Name = "lbl_Savings";
-            this.lbl_Savings.Size = new System.Drawing.Size(74, 21);
+            this.lbl_Savings.Size = new System.Drawing.Size(72, 22);
             this.lbl_Savings.TabIndex = 6;
             this.lbl_Savings.Text = "Savings";
             this.lbl_Savings.Click += new System.EventHandler(this.lbl_Savings_Click);
@@ -238,7 +238,7 @@
             this.lbl_Bills.ForeColor = System.Drawing.Color.White;
             this.lbl_Bills.Location = new System.Drawing.Point(95, 33);
             this.lbl_Bills.Name = "lbl_Bills";
-            this.lbl_Bills.Size = new System.Drawing.Size(44, 21);
+            this.lbl_Bills.Size = new System.Drawing.Size(44, 22);
             this.lbl_Bills.TabIndex = 5;
             this.lbl_Bills.Text = "Bills";
             this.lbl_Bills.Click += new System.EventHandler(this.lbl_Bills_Click);
@@ -387,7 +387,6 @@
             this.pnl_Home.Name = "pnl_Home";
             this.pnl_Home.Size = new System.Drawing.Size(200, 85);
             this.pnl_Home.TabIndex = 0;
-       
             // 
             // lbl_Home
             // 
@@ -396,7 +395,7 @@
             this.lbl_Home.ForeColor = System.Drawing.Color.White;
             this.lbl_Home.Location = new System.Drawing.Point(95, 33);
             this.lbl_Home.Name = "lbl_Home";
-            this.lbl_Home.Size = new System.Drawing.Size(60, 21);
+            this.lbl_Home.Size = new System.Drawing.Size(59, 22);
             this.lbl_Home.TabIndex = 1;
             this.lbl_Home.Text = "Home";
             this.lbl_Home.Click += new System.EventHandler(this.lbl_Home_Click);
@@ -428,6 +427,7 @@
             this.ClientSize = new System.Drawing.Size(1284, 681);
             this.Controls.Add(this.DisplayPanel);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "MainPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Money-Wise";

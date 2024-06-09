@@ -55,6 +55,12 @@
     <Compile Include="ArtanPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Bills.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bills.Designer.cs">
+      <DependentUpon>Bills.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomBorderTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -76,6 +82,18 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="OnlinePayments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlinePayments.Designer.cs">
+      <DependentUpon>OnlinePayments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtherExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtherExpenses.Designer.cs">
+      <DependentUpon>OtherExpenses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RJTextBox.cs">
@@ -84,8 +102,23 @@
     <Compile Include="RJTextBox.Designer.cs">
       <DependentUpon>RJTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Savings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Savings.Designer.cs">
+      <DependentUpon>Savings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TranspoExpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TranspoExpenses.Designer.cs">
+      <DependentUpon>TranspoExpenses.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Add Expense.resx">
       <DependentUpon>Add Expense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bills.resx">
+      <DependentUpon>Bills.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FoodExpenses.resx">
       <DependentUpon>FoodExpenses.cs</DependentUpon>
@@ -95,6 +128,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlinePayments.resx">
+      <DependentUpon>OnlinePayments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtherExpenses.resx">
+      <DependentUpon>OtherExpenses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -108,6 +147,12 @@
     </Compile>
     <EmbeddedResource Include="RJTextBox.resx">
       <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Savings.resx">
+      <DependentUpon>Savings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TranspoExpenses.resx">
+      <DependentUpon>TranspoExpenses.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

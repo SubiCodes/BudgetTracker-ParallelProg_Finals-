@@ -418,9 +418,9 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.label6.Location = new System.Drawing.Point(30, 28);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 25);
+            this.label6.Size = new System.Drawing.Size(63, 25);
             this.label6.TabIndex = 3;
-            this.label6.Text = "Title:";
+            this.label6.Text = "Date:";
             // 
             // artanPanel4
             // 

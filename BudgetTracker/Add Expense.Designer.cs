@@ -90,9 +90,9 @@
             this.label3.ForeColor = System.Drawing.Color.MediumPurple;
             this.label3.Location = new System.Drawing.Point(22, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 24);
+            this.label3.Size = new System.Drawing.Size(70, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Total:";
+            this.label3.Text = "Price:";
             // 
             // label4
             // 

@@ -44,29 +44,29 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.artanPanel6 = new BudgetTracker.ArtanPanel();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.rb_LowestPrice = new System.Windows.Forms.RadioButton();
+            this.rb_HighestPrice = new System.Windows.Forms.RadioButton();
+            this.rb_ZtoA = new System.Windows.Forms.RadioButton();
+            this.rb_EarliestFirst = new System.Windows.Forms.RadioButton();
+            this.rb_AtoZ = new System.Windows.Forms.RadioButton();
+            this.rb_LatestFirst = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.artanPanel5 = new BudgetTracker.ArtanPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.customBorderTextBox4 = new BudgetTracker.CustomBorderTextBox();
+            this.pb_DateSearch = new System.Windows.Forms.PictureBox();
+            this.txt_DateSearch = new BudgetTracker.CustomBorderTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.artanPanel4 = new BudgetTracker.ArtanPanel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.customBorderTextBox2 = new BudgetTracker.CustomBorderTextBox();
+            this.pb_TitleSearch = new System.Windows.Forms.PictureBox();
+            this.txt_TitleSearch = new BudgetTracker.CustomBorderTextBox();
             this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dg_FoodExpense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.artanPanel6.SuspendLayout();
             this.artanPanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_DateSearch)).BeginInit();
             this.artanPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_TitleSearch)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -88,6 +88,7 @@
             this.dg_FoodExpense.AllowUserToResizeColumns = false;
             this.dg_FoodExpense.AllowUserToResizeRows = false;
             this.dg_FoodExpense.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.dg_FoodExpense.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dg_FoodExpense.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
@@ -260,12 +261,12 @@
             // 
             this.artanPanel6.BackColor = System.Drawing.Color.White;
             this.artanPanel6.BorderRadius = 40;
-            this.artanPanel6.Controls.Add(this.radioButton7);
-            this.artanPanel6.Controls.Add(this.radioButton8);
-            this.artanPanel6.Controls.Add(this.radioButton9);
-            this.artanPanel6.Controls.Add(this.radioButton10);
-            this.artanPanel6.Controls.Add(this.radioButton11);
-            this.artanPanel6.Controls.Add(this.radioButton12);
+            this.artanPanel6.Controls.Add(this.rb_LowestPrice);
+            this.artanPanel6.Controls.Add(this.rb_HighestPrice);
+            this.artanPanel6.Controls.Add(this.rb_ZtoA);
+            this.artanPanel6.Controls.Add(this.rb_EarliestFirst);
+            this.artanPanel6.Controls.Add(this.rb_AtoZ);
+            this.artanPanel6.Controls.Add(this.rb_LatestFirst);
             this.artanPanel6.Controls.Add(this.label7);
             this.artanPanel6.ForeColor = System.Drawing.Color.Black;
             this.artanPanel6.GradientAngle = 90F;
@@ -276,89 +277,89 @@
             this.artanPanel6.Size = new System.Drawing.Size(350, 231);
             this.artanPanel6.TabIndex = 4;
             // 
-            // radioButton7
+            // rb_LowestPrice
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.BackColor = System.Drawing.Color.MediumPurple;
-            this.radioButton7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.ForeColor = System.Drawing.Color.Black;
-            this.radioButton7.Location = new System.Drawing.Point(171, 172);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(112, 22);
-            this.radioButton7.TabIndex = 15;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Lowest Price";
-            this.radioButton7.UseVisualStyleBackColor = false;
+            this.rb_LowestPrice.AutoSize = true;
+            this.rb_LowestPrice.BackColor = System.Drawing.Color.MediumPurple;
+            this.rb_LowestPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_LowestPrice.ForeColor = System.Drawing.Color.Black;
+            this.rb_LowestPrice.Location = new System.Drawing.Point(171, 172);
+            this.rb_LowestPrice.Name = "rb_LowestPrice";
+            this.rb_LowestPrice.Size = new System.Drawing.Size(112, 22);
+            this.rb_LowestPrice.TabIndex = 15;
+            this.rb_LowestPrice.TabStop = true;
+            this.rb_LowestPrice.Text = "Lowest Price";
+            this.rb_LowestPrice.UseVisualStyleBackColor = false;
             // 
-            // radioButton8
+            // rb_HighestPrice
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.BackColor = System.Drawing.Color.MediumPurple;
-            this.radioButton8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.ForeColor = System.Drawing.Color.Black;
-            this.radioButton8.Location = new System.Drawing.Point(35, 172);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(114, 22);
-            this.radioButton8.TabIndex = 14;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Highest Price";
-            this.radioButton8.UseVisualStyleBackColor = false;
+            this.rb_HighestPrice.AutoSize = true;
+            this.rb_HighestPrice.BackColor = System.Drawing.Color.MediumPurple;
+            this.rb_HighestPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_HighestPrice.ForeColor = System.Drawing.Color.Black;
+            this.rb_HighestPrice.Location = new System.Drawing.Point(35, 172);
+            this.rb_HighestPrice.Name = "rb_HighestPrice";
+            this.rb_HighestPrice.Size = new System.Drawing.Size(114, 22);
+            this.rb_HighestPrice.TabIndex = 14;
+            this.rb_HighestPrice.TabStop = true;
+            this.rb_HighestPrice.Text = "Highest Price";
+            this.rb_HighestPrice.UseVisualStyleBackColor = false;
             // 
-            // radioButton9
+            // rb_ZtoA
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.BackColor = System.Drawing.Color.MediumPurple;
-            this.radioButton9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.ForeColor = System.Drawing.Color.Black;
-            this.radioButton9.Location = new System.Drawing.Point(171, 129);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(80, 22);
-            this.radioButton9.TabIndex = 13;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Title Z-A";
-            this.radioButton9.UseVisualStyleBackColor = false;
+            this.rb_ZtoA.AutoSize = true;
+            this.rb_ZtoA.BackColor = System.Drawing.Color.MediumPurple;
+            this.rb_ZtoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_ZtoA.ForeColor = System.Drawing.Color.Black;
+            this.rb_ZtoA.Location = new System.Drawing.Point(171, 129);
+            this.rb_ZtoA.Name = "rb_ZtoA";
+            this.rb_ZtoA.Size = new System.Drawing.Size(80, 22);
+            this.rb_ZtoA.TabIndex = 13;
+            this.rb_ZtoA.TabStop = true;
+            this.rb_ZtoA.Text = "Title Z-A";
+            this.rb_ZtoA.UseVisualStyleBackColor = false;
             // 
-            // radioButton10
+            // rb_EarliestFirst
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.BackColor = System.Drawing.Color.MediumPurple;
-            this.radioButton10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.ForeColor = System.Drawing.Color.Black;
-            this.radioButton10.Location = new System.Drawing.Point(171, 87);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(108, 22);
-            this.radioButton10.TabIndex = 12;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Earliest First";
-            this.radioButton10.UseVisualStyleBackColor = false;
+            this.rb_EarliestFirst.AutoSize = true;
+            this.rb_EarliestFirst.BackColor = System.Drawing.Color.MediumPurple;
+            this.rb_EarliestFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_EarliestFirst.ForeColor = System.Drawing.Color.Black;
+            this.rb_EarliestFirst.Location = new System.Drawing.Point(171, 87);
+            this.rb_EarliestFirst.Name = "rb_EarliestFirst";
+            this.rb_EarliestFirst.Size = new System.Drawing.Size(108, 22);
+            this.rb_EarliestFirst.TabIndex = 12;
+            this.rb_EarliestFirst.TabStop = true;
+            this.rb_EarliestFirst.Text = "Earliest First";
+            this.rb_EarliestFirst.UseVisualStyleBackColor = false;
             // 
-            // radioButton11
+            // rb_AtoZ
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.BackColor = System.Drawing.Color.MediumPurple;
-            this.radioButton11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.ForeColor = System.Drawing.Color.Black;
-            this.radioButton11.Location = new System.Drawing.Point(35, 129);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(80, 22);
-            this.radioButton11.TabIndex = 11;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Title A-Z";
-            this.radioButton11.UseVisualStyleBackColor = false;
+            this.rb_AtoZ.AutoSize = true;
+            this.rb_AtoZ.BackColor = System.Drawing.Color.MediumPurple;
+            this.rb_AtoZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_AtoZ.ForeColor = System.Drawing.Color.Black;
+            this.rb_AtoZ.Location = new System.Drawing.Point(35, 129);
+            this.rb_AtoZ.Name = "rb_AtoZ";
+            this.rb_AtoZ.Size = new System.Drawing.Size(80, 22);
+            this.rb_AtoZ.TabIndex = 11;
+            this.rb_AtoZ.TabStop = true;
+            this.rb_AtoZ.Text = "Title A-Z";
+            this.rb_AtoZ.UseVisualStyleBackColor = false;
             // 
-            // radioButton12
+            // rb_LatestFirst
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.BackColor = System.Drawing.Color.MediumPurple;
-            this.radioButton12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.ForeColor = System.Drawing.Color.Black;
-            this.radioButton12.Location = new System.Drawing.Point(35, 87);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(99, 22);
-            this.radioButton12.TabIndex = 10;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Latest First";
-            this.radioButton12.UseVisualStyleBackColor = false;
+            this.rb_LatestFirst.AutoSize = true;
+            this.rb_LatestFirst.BackColor = System.Drawing.Color.MediumPurple;
+            this.rb_LatestFirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_LatestFirst.ForeColor = System.Drawing.Color.Black;
+            this.rb_LatestFirst.Location = new System.Drawing.Point(35, 87);
+            this.rb_LatestFirst.Name = "rb_LatestFirst";
+            this.rb_LatestFirst.Size = new System.Drawing.Size(99, 22);
+            this.rb_LatestFirst.TabIndex = 10;
+            this.rb_LatestFirst.TabStop = true;
+            this.rb_LatestFirst.Text = "Latest First";
+            this.rb_LatestFirst.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -376,8 +377,8 @@
             // 
             this.artanPanel5.BackColor = System.Drawing.Color.White;
             this.artanPanel5.BorderRadius = 40;
-            this.artanPanel5.Controls.Add(this.pictureBox4);
-            this.artanPanel5.Controls.Add(this.customBorderTextBox4);
+            this.artanPanel5.Controls.Add(this.pb_DateSearch);
+            this.artanPanel5.Controls.Add(this.txt_DateSearch);
             this.artanPanel5.Controls.Add(this.label6);
             this.artanPanel5.ForeColor = System.Drawing.Color.Black;
             this.artanPanel5.GradientAngle = 90F;
@@ -388,27 +389,27 @@
             this.artanPanel5.Size = new System.Drawing.Size(350, 118);
             this.artanPanel5.TabIndex = 3;
             // 
-            // pictureBox4
+            // pb_DateSearch
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.MediumPurple;
-            this.pictureBox4.Image = global::BudgetTracker.Properties.Resources.searchIcon;
-            this.pictureBox4.Location = new System.Drawing.Point(277, 55);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
+            this.pb_DateSearch.BackColor = System.Drawing.Color.MediumPurple;
+            this.pb_DateSearch.Image = global::BudgetTracker.Properties.Resources.searchIcon;
+            this.pb_DateSearch.Location = new System.Drawing.Point(277, 55);
+            this.pb_DateSearch.Name = "pb_DateSearch";
+            this.pb_DateSearch.Size = new System.Drawing.Size(30, 30);
+            this.pb_DateSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_DateSearch.TabIndex = 8;
+            this.pb_DateSearch.TabStop = false;
             // 
-            // customBorderTextBox4
+            // txt_DateSearch
             // 
-            this.customBorderTextBox4.BackColor = System.Drawing.Color.MediumPurple;
-            this.customBorderTextBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.customBorderTextBox4.BottomBorderColorOnFocus = System.Drawing.Color.Black;
-            this.customBorderTextBox4.BottomColor = System.Drawing.Color.Black;
-            this.customBorderTextBox4.Location = new System.Drawing.Point(35, 67);
-            this.customBorderTextBox4.Name = "customBorderTextBox4";
-            this.customBorderTextBox4.Size = new System.Drawing.Size(271, 21);
-            this.customBorderTextBox4.TabIndex = 4;
+            this.txt_DateSearch.BackColor = System.Drawing.Color.MediumPurple;
+            this.txt_DateSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_DateSearch.BottomBorderColorOnFocus = System.Drawing.Color.Black;
+            this.txt_DateSearch.BottomColor = System.Drawing.Color.Black;
+            this.txt_DateSearch.Location = new System.Drawing.Point(35, 67);
+            this.txt_DateSearch.Name = "txt_DateSearch";
+            this.txt_DateSearch.Size = new System.Drawing.Size(271, 21);
+            this.txt_DateSearch.TabIndex = 4;
             // 
             // label6
             // 
@@ -426,8 +427,8 @@
             // 
             this.artanPanel4.BackColor = System.Drawing.Color.White;
             this.artanPanel4.BorderRadius = 40;
-            this.artanPanel4.Controls.Add(this.pictureBox3);
-            this.artanPanel4.Controls.Add(this.customBorderTextBox2);
+            this.artanPanel4.Controls.Add(this.pb_TitleSearch);
+            this.artanPanel4.Controls.Add(this.txt_TitleSearch);
             this.artanPanel4.Controls.Add(this.label5);
             this.artanPanel4.ForeColor = System.Drawing.Color.Black;
             this.artanPanel4.GradientAngle = 90F;
@@ -438,27 +439,27 @@
             this.artanPanel4.Size = new System.Drawing.Size(350, 118);
             this.artanPanel4.TabIndex = 2;
             // 
-            // pictureBox3
+            // pb_TitleSearch
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.MediumPurple;
-            this.pictureBox3.Image = global::BudgetTracker.Properties.Resources.searchIcon;
-            this.pictureBox3.Location = new System.Drawing.Point(277, 55);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.pb_TitleSearch.BackColor = System.Drawing.Color.MediumPurple;
+            this.pb_TitleSearch.Image = global::BudgetTracker.Properties.Resources.searchIcon;
+            this.pb_TitleSearch.Location = new System.Drawing.Point(277, 55);
+            this.pb_TitleSearch.Name = "pb_TitleSearch";
+            this.pb_TitleSearch.Size = new System.Drawing.Size(30, 30);
+            this.pb_TitleSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_TitleSearch.TabIndex = 8;
+            this.pb_TitleSearch.TabStop = false;
             // 
-            // customBorderTextBox2
+            // txt_TitleSearch
             // 
-            this.customBorderTextBox2.BackColor = System.Drawing.Color.MediumPurple;
-            this.customBorderTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.customBorderTextBox2.BottomBorderColorOnFocus = System.Drawing.Color.Black;
-            this.customBorderTextBox2.BottomColor = System.Drawing.Color.Black;
-            this.customBorderTextBox2.Location = new System.Drawing.Point(35, 67);
-            this.customBorderTextBox2.Name = "customBorderTextBox2";
-            this.customBorderTextBox2.Size = new System.Drawing.Size(271, 21);
-            this.customBorderTextBox2.TabIndex = 4;
+            this.txt_TitleSearch.BackColor = System.Drawing.Color.MediumPurple;
+            this.txt_TitleSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_TitleSearch.BottomBorderColorOnFocus = System.Drawing.Color.Black;
+            this.txt_TitleSearch.BottomColor = System.Drawing.Color.Black;
+            this.txt_TitleSearch.Location = new System.Drawing.Point(35, 67);
+            this.txt_TitleSearch.Name = "txt_TitleSearch";
+            this.txt_TitleSearch.Size = new System.Drawing.Size(271, 21);
+            this.txt_TitleSearch.TabIndex = 4;
             // 
             // label5
             // 
@@ -492,10 +493,10 @@
             this.artanPanel6.PerformLayout();
             this.artanPanel5.ResumeLayout(false);
             this.artanPanel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_DateSearch)).EndInit();
             this.artanPanel4.ResumeLayout(false);
             this.artanPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_TitleSearch)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -523,19 +524,19 @@
         private System.Windows.Forms.RadioButton radioButton6;
         private ArtanPanel artanPanel4;
         private System.Windows.Forms.Label label5;
-        private CustomBorderTextBox customBorderTextBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private CustomBorderTextBox txt_TitleSearch;
+        private System.Windows.Forms.PictureBox pb_TitleSearch;
         private ArtanPanel artanPanel5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private CustomBorderTextBox customBorderTextBox4;
+        private System.Windows.Forms.PictureBox pb_DateSearch;
+        private CustomBorderTextBox txt_DateSearch;
         private System.Windows.Forms.Label label6;
         private ArtanPanel artanPanel6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton rb_LowestPrice;
+        private System.Windows.Forms.RadioButton rb_HighestPrice;
+        private System.Windows.Forms.RadioButton rb_ZtoA;
+        private System.Windows.Forms.RadioButton rb_EarliestFirst;
+        private System.Windows.Forms.RadioButton rb_AtoZ;
+        private System.Windows.Forms.RadioButton rb_LatestFirst;
     }
 }

@@ -98,7 +98,7 @@ namespace BudgetTracker
             //If Both Title and Date has no input
             if ((Title.Equals("(e.g. \"Title\")") || Title.Equals("")))
             {
-                String Query = "Select Title, Price, Date FROM food_expense ORDER BY Date DESC";
+                String Query = "Select * FROM food_expense ORDER BY Date DESC";
                 SQLMethods.OrderedData(Query, dg_FoodExpense);
                 return;
             }
@@ -119,7 +119,7 @@ namespace BudgetTracker
             //If Both Title and Date has no input
             if ((Title.Equals("(e.g. \"Title\")") || Title.Equals("")))
             {
-                String Query = "Select Title, Price, Date FROM food_expense ORDER BY Date ASC";
+                String Query = "Select * FROM food_expense ORDER BY Date ASC";
                 SQLMethods.OrderedData(Query, dg_FoodExpense);
                 return;
             }
@@ -137,7 +137,7 @@ namespace BudgetTracker
             String Date = txt_DateSearch.Text.Trim();   
             if (Date.Equals("YYYY-MM-DD") || Date.Equals(""))
             {
-                String Query = "Select Title, Price, Date FROM food_expense Order By Title ASC";
+                String Query = "Select * FROM food_expense Order By Title ASC";
                 SQLMethods.OrderedData(Query, dg_FoodExpense);
                 return;
             }
@@ -149,7 +149,7 @@ namespace BudgetTracker
             String Date = txt_DateSearch.Text.Trim();
             if (Date.Equals("YYYY-MM-DD") || Date.Equals(""))
             {
-                String Query = "Select Title, Price, Date FROM food_expense Order By Title DESC";
+                String Query = "Select * FROM food_expense Order By Title DESC";
                 SQLMethods.OrderedData(Query, dg_FoodExpense);
                 return;
             }
@@ -163,7 +163,7 @@ namespace BudgetTracker
             //if both Date and Title is empty
             if ((Date.Equals("YYYY-MM-DD") || Date.Equals("")) && (Title.Equals("") || Title.Equals("(e.g. \"Title\")")))
             {
-                String Query = "Select Title, Price, Date FROM food_expense Order By Price DESC";
+                String Query = "Select * FROM food_expense Order By Price DESC";
                 SQLMethods.OrderedData(Query, dg_FoodExpense);
                 return;
             }
@@ -191,7 +191,7 @@ namespace BudgetTracker
             //if both Date and Title is empty
             if ((Date.Equals("YYYY-MM-DD") || Date.Equals("")) && (Title.Equals("") || Title.Equals("(e.g. \"Title\")")))
             {
-                String Query = "Select Title, Price, Date FROM food_expense Order By Price ASC";
+                String Query = "Select * FROM food_expense Order By Price ASC";
                 SQLMethods.OrderedData(Query, dg_FoodExpense);
                 return;
             }
@@ -210,6 +210,12 @@ namespace BudgetTracker
             {
                 SQLMethods.OrderedDateAndTitleByPrice("food_expense", Title, Date, dg_FoodExpense, "ASC");
             }
+        }
+
+        private void dg_FoodExpense_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string description = dg_FoodExpense.Rows[e.RowIndex].Cells["Description"].Value.ToString();
+            MessageBox.Show(description, "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

@@ -46,7 +46,7 @@ namespace BudgetTracker
         public void LoadAllData(String Table, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table;
+            String Query = "Select * From " + Table;
             try
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
@@ -56,6 +56,16 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
+
+
             }
             catch (Exception ex)
             {
@@ -67,7 +77,7 @@ namespace BudgetTracker
         public void SearchTitle(String Table, String Title, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table + " Where LOWER(Title) LIKE LOWER(@Title)";
+            String Query = "Select * From " + Table + " Where LOWER(Title) LIKE LOWER(@Title)";
             try
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
@@ -78,6 +88,15 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
+
             }
             catch (Exception ex)
             {
@@ -87,7 +106,7 @@ namespace BudgetTracker
         public void SearchDate(String Table, String Date, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table + " Where Date = @Date";
+            String Query = "Select * From " + Table + " Where Date = @Date";
             try
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
@@ -98,6 +117,15 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
+
             }
             catch (Exception ex)
             {
@@ -116,6 +144,14 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -128,7 +164,7 @@ namespace BudgetTracker
         public void OrderedDataWithTitleByDate(String Table, String Title, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table + " WHERE Title = @Title Order By Date "+Order;
+            String Query = "Select * From " + Table + " WHERE Title = @Title Order By Date "+Order;
             try
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
@@ -139,6 +175,15 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
+
             }
             catch (Exception ex)
             {
@@ -148,7 +193,7 @@ namespace BudgetTracker
         public void OrderedDataWithTitleByPrice(String Table, String Title, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table + " WHERE Title = @Title Order By Price " + Order;
+            String Query = "Select * From " + Table + " WHERE Title = @Title Order By Price " + Order;
             try
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
@@ -159,6 +204,14 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -168,7 +221,7 @@ namespace BudgetTracker
         public void OrderedDataWithDateByPrice(String Table, String Date, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table + " WHERE Date = @Date Order By Title "+Order;
+            String Query = "Select * From " + Table + " WHERE Date = @Date Order By Title "+Order;
 
             try
             {
@@ -180,6 +233,15 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
+
             }
             catch (Exception ex)
             {
@@ -189,7 +251,7 @@ namespace BudgetTracker
         public void OrderedDataWithDateByTitle(String Table, String Date, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table + " WHERE Date = @Date Order By Title " + Order;
+            String Query = "Select * From " + Table + " WHERE Date = @Date Order By Title " + Order;
 
             try
             {
@@ -201,6 +263,15 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
+
             }
             catch (Exception ex)
             {
@@ -210,7 +281,7 @@ namespace BudgetTracker
         public void OrderedDateAndTitleByPrice(String Table, String Title, String Date, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From " + Table + " WHERE Date = @Date AND Title = @Title Order By Price " + Order;
+            String Query = "Select * From " + Table + " WHERE Date = @Date AND Title = @Title Order By Price " + Order;
             try
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
@@ -222,6 +293,16 @@ namespace BudgetTracker
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
                 Grid.DataSource = Datatable;
+
+                foreach (DataGridViewColumn column in Grid.Columns)
+                {
+                    if (column.Name != "Price" && column.Name != "Date" && column.Name != "Title")
+                    {
+                        column.Visible = false;
+                    }
+                }
+
+
             }
             catch (Exception ex)
             {

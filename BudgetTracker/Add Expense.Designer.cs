@@ -35,30 +35,35 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rb_Food = new System.Windows.Forms.RadioButton();
+            this.rb_Transpo = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_AddExpense = new System.Windows.Forms.Button();
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rb_Online = new System.Windows.Forms.RadioButton();
+            this.rb_Savings = new System.Windows.Forms.RadioButton();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.txt_Date = new BudgetTracker.RJTextBox();
-            this.txt_Total = new BudgetTracker.RJTextBox();
-            this.txt_title = new BudgetTracker.RJTextBox();
+            this.rb_Others = new System.Windows.Forms.RadioButton();
+            this.rb_Bills = new System.Windows.Forms.RadioButton();
+            this.txt_Title = new System.Windows.Forms.TextBox();
+            this.txt_Price = new System.Windows.Forms.TextBox();
+            this.txt_Date = new System.Windows.Forms.TextBox();
+            this.txt_Date_design = new BudgetTracker.RJTextBox();
+            this.txt_Price_design = new BudgetTracker.RJTextBox();
+            this.txt_title_design = new BudgetTracker.RJTextBox();
             this.artanPanel1 = new BudgetTracker.ArtanPanel();
+            this.txt_Description = new BudgetTracker.CustomBorderTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.artanPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -127,29 +132,29 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Type:";
             // 
-            // radioButton1
+            // rb_Food
             // 
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(17, 529);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(92, 38);
-            this.radioButton1.TabIndex = 7;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Food";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rb_Food.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Food.ForeColor = System.Drawing.Color.White;
+            this.rb_Food.Location = new System.Drawing.Point(17, 529);
+            this.rb_Food.Name = "rb_Food";
+            this.rb_Food.Size = new System.Drawing.Size(92, 38);
+            this.rb_Food.TabIndex = 7;
+            this.rb_Food.TabStop = true;
+            this.rb_Food.Text = "Food";
+            this.rb_Food.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rb_Transpo
             // 
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.White;
-            this.radioButton2.Location = new System.Drawing.Point(18, 567);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(98, 38);
-            this.radioButton2.TabIndex = 8;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Transpo";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rb_Transpo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Transpo.ForeColor = System.Drawing.Color.White;
+            this.rb_Transpo.Location = new System.Drawing.Point(18, 567);
+            this.rb_Transpo.Name = "rb_Transpo";
+            this.rb_Transpo.Size = new System.Drawing.Size(98, 38);
+            this.rb_Transpo.TabIndex = 8;
+            this.rb_Transpo.TabStop = true;
+            this.rb_Transpo.Text = "Transpo";
+            this.rb_Transpo.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -172,6 +177,7 @@
             this.btn_AddExpense.TabIndex = 14;
             this.btn_AddExpense.Text = "ADD EXPENSE";
             this.btn_AddExpense.UseVisualStyleBackColor = false;
+            this.btn_AddExpense.Click += new System.EventHandler(this.btn_AddExpense_Click);
             // 
             // btn_Cancel
             // 
@@ -216,29 +222,29 @@
             this.pictureBox4.TabIndex = 19;
             this.pictureBox4.TabStop = false;
             // 
-            // radioButton3
+            // rb_Online
             // 
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.ForeColor = System.Drawing.Color.White;
-            this.radioButton3.Location = new System.Drawing.Point(149, 567);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(91, 38);
-            this.radioButton3.TabIndex = 18;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Online";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rb_Online.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Online.ForeColor = System.Drawing.Color.White;
+            this.rb_Online.Location = new System.Drawing.Point(149, 567);
+            this.rb_Online.Name = "rb_Online";
+            this.rb_Online.Size = new System.Drawing.Size(91, 38);
+            this.rb_Online.TabIndex = 18;
+            this.rb_Online.TabStop = true;
+            this.rb_Online.Text = "Online";
+            this.rb_Online.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rb_Savings
             // 
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.ForeColor = System.Drawing.Color.White;
-            this.radioButton4.Location = new System.Drawing.Point(148, 529);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(112, 38);
-            this.radioButton4.TabIndex = 17;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Savings";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rb_Savings.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Savings.ForeColor = System.Drawing.Color.White;
+            this.rb_Savings.Location = new System.Drawing.Point(148, 529);
+            this.rb_Savings.Name = "rb_Savings";
+            this.rb_Savings.Size = new System.Drawing.Size(112, 38);
+            this.rb_Savings.TabIndex = 17;
+            this.rb_Savings.TabStop = true;
+            this.rb_Savings.Text = "Savings";
+            this.rb_Savings.UseVisualStyleBackColor = true;
             // 
             // pictureBox5
             // 
@@ -260,97 +266,137 @@
             this.pictureBox6.TabIndex = 23;
             this.pictureBox6.TabStop = false;
             // 
-            // radioButton5
+            // rb_Others
             // 
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.ForeColor = System.Drawing.Color.White;
-            this.radioButton5.Location = new System.Drawing.Point(283, 567);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(91, 38);
-            this.radioButton5.TabIndex = 22;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Others";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rb_Others.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Others.ForeColor = System.Drawing.Color.White;
+            this.rb_Others.Location = new System.Drawing.Point(283, 567);
+            this.rb_Others.Name = "rb_Others";
+            this.rb_Others.Size = new System.Drawing.Size(91, 38);
+            this.rb_Others.TabIndex = 22;
+            this.rb_Others.TabStop = true;
+            this.rb_Others.Text = "Others";
+            this.rb_Others.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rb_Bills
             // 
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.ForeColor = System.Drawing.Color.White;
-            this.radioButton6.Location = new System.Drawing.Point(282, 529);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(112, 38);
-            this.radioButton6.TabIndex = 21;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Bills";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rb_Bills.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rb_Bills.ForeColor = System.Drawing.Color.White;
+            this.rb_Bills.Location = new System.Drawing.Point(282, 529);
+            this.rb_Bills.Name = "rb_Bills";
+            this.rb_Bills.Size = new System.Drawing.Size(112, 38);
+            this.rb_Bills.TabIndex = 21;
+            this.rb_Bills.TabStop = true;
+            this.rb_Bills.Text = "Bills";
+            this.rb_Bills.UseVisualStyleBackColor = true;
+            // 
+            // txt_Title
+            // 
+            this.txt_Title.BackColor = System.Drawing.Color.White;
+            this.txt_Title.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Title.Location = new System.Drawing.Point(127, 125);
+            this.txt_Title.Name = "txt_Title";
+            this.txt_Title.Size = new System.Drawing.Size(240, 15);
+            this.txt_Title.TabIndex = 28;
+            this.txt_Title.Enter += new System.EventHandler(this.txt_Title_Enter);
+            this.txt_Title.Leave += new System.EventHandler(this.txt_Title_Leave);
+            // 
+            // txt_Price
+            // 
+            this.txt_Price.BackColor = System.Drawing.Color.White;
+            this.txt_Price.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Price.Location = new System.Drawing.Point(127, 185);
+            this.txt_Price.Name = "txt_Price";
+            this.txt_Price.Size = new System.Drawing.Size(240, 15);
+            this.txt_Price.TabIndex = 29;
+            this.txt_Price.Enter += new System.EventHandler(this.txt_Price_Enter);
+            this.txt_Price.Leave += new System.EventHandler(this.txt_Price_Leave);
             // 
             // txt_Date
             // 
             this.txt_Date.BackColor = System.Drawing.Color.White;
-            this.txt_Date.BorderColor = System.Drawing.Color.White;
-            this.txt_Date.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txt_Date.BorderRadius = 10;
-            this.txt_Date.BorderSize = 2;
-            this.txt_Date.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Date.Location = new System.Drawing.Point(118, 236);
-            this.txt_Date.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_Date.Multiline = false;
+            this.txt_Date.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Date.Location = new System.Drawing.Point(127, 245);
             this.txt_Date.Name = "txt_Date";
-            this.txt_Date.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_Date.PasswordChar = false;
-            this.txt_Date.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txt_Date.PlaceholderText = "";
-            this.txt_Date.Size = new System.Drawing.Size(256, 32);
-            this.txt_Date.TabIndex = 27;
-            this.txt_Date.Texts = "";
-            this.txt_Date.UnderlinedStyle = false;
+            this.txt_Date.Size = new System.Drawing.Size(240, 15);
+            this.txt_Date.TabIndex = 30;
+            this.txt_Date.Enter += new System.EventHandler(this.txt_Date_Enter);
+            this.txt_Date.Leave += new System.EventHandler(this.txt_Date_Leave);
             // 
-            // txt_Total
+            // txt_Date_design
             // 
-            this.txt_Total.BackColor = System.Drawing.Color.White;
-            this.txt_Total.BorderColor = System.Drawing.Color.White;
-            this.txt_Total.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txt_Total.BorderRadius = 10;
-            this.txt_Total.BorderSize = 2;
-            this.txt_Total.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Total.Location = new System.Drawing.Point(118, 176);
-            this.txt_Total.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_Total.Multiline = false;
-            this.txt_Total.Name = "txt_Total";
-            this.txt_Total.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_Total.PasswordChar = false;
-            this.txt_Total.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txt_Total.PlaceholderText = "";
-            this.txt_Total.Size = new System.Drawing.Size(256, 32);
-            this.txt_Total.TabIndex = 26;
-            this.txt_Total.Texts = "";
-            this.txt_Total.UnderlinedStyle = false;
+            this.txt_Date_design.BackColor = System.Drawing.Color.White;
+            this.txt_Date_design.BorderColor = System.Drawing.Color.White;
+            this.txt_Date_design.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txt_Date_design.BorderRadius = 10;
+            this.txt_Date_design.BorderSize = 2;
+            this.txt_Date_design.Enabled = false;
+            this.txt_Date_design.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Date_design.Location = new System.Drawing.Point(118, 236);
+            this.txt_Date_design.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Date_design.Multiline = false;
+            this.txt_Date_design.Name = "txt_Date_design";
+            this.txt_Date_design.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_Date_design.PasswordChar = false;
+            this.txt_Date_design.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_Date_design.PlaceholderText = "";
+            this.txt_Date_design.Size = new System.Drawing.Size(256, 32);
+            this.txt_Date_design.TabIndex = 27;
+            this.txt_Date_design.Texts = "";
+            this.txt_Date_design.UnderlinedStyle = false;
             // 
-            // txt_title
+            // txt_Price_design
             // 
-            this.txt_title.BackColor = System.Drawing.Color.White;
-            this.txt_title.BorderColor = System.Drawing.Color.White;
-            this.txt_title.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txt_title.BorderRadius = 10;
-            this.txt_title.BorderSize = 2;
-            this.txt_title.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_title.Location = new System.Drawing.Point(118, 116);
-            this.txt_title.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txt_title.Multiline = false;
-            this.txt_title.Name = "txt_title";
-            this.txt_title.Padding = new System.Windows.Forms.Padding(7);
-            this.txt_title.PasswordChar = false;
-            this.txt_title.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txt_title.PlaceholderText = "";
-            this.txt_title.Size = new System.Drawing.Size(256, 32);
-            this.txt_title.TabIndex = 25;
-            this.txt_title.Texts = "";
-            this.txt_title.UnderlinedStyle = false;
+            this.txt_Price_design.BackColor = System.Drawing.Color.White;
+            this.txt_Price_design.BorderColor = System.Drawing.Color.White;
+            this.txt_Price_design.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txt_Price_design.BorderRadius = 10;
+            this.txt_Price_design.BorderSize = 2;
+            this.txt_Price_design.Enabled = false;
+            this.txt_Price_design.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Price_design.Location = new System.Drawing.Point(118, 176);
+            this.txt_Price_design.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Price_design.Multiline = false;
+            this.txt_Price_design.Name = "txt_Price_design";
+            this.txt_Price_design.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_Price_design.PasswordChar = false;
+            this.txt_Price_design.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_Price_design.PlaceholderText = "";
+            this.txt_Price_design.Size = new System.Drawing.Size(256, 32);
+            this.txt_Price_design.TabIndex = 26;
+            this.txt_Price_design.Texts = "";
+            this.txt_Price_design.UnderlinedStyle = false;
+            // 
+            // txt_title_design
+            // 
+            this.txt_title_design.BackColor = System.Drawing.Color.White;
+            this.txt_title_design.BorderColor = System.Drawing.Color.White;
+            this.txt_title_design.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txt_title_design.BorderRadius = 10;
+            this.txt_title_design.BorderSize = 2;
+            this.txt_title_design.Enabled = false;
+            this.txt_title_design.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_title_design.Location = new System.Drawing.Point(118, 116);
+            this.txt_title_design.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_title_design.Multiline = false;
+            this.txt_title_design.Name = "txt_title_design";
+            this.txt_title_design.Padding = new System.Windows.Forms.Padding(7);
+            this.txt_title_design.PasswordChar = false;
+            this.txt_title_design.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txt_title_design.PlaceholderText = "";
+            this.txt_title_design.Size = new System.Drawing.Size(256, 32);
+            this.txt_title_design.TabIndex = 25;
+            this.txt_title_design.Texts = "";
+            this.txt_title_design.UnderlinedStyle = false;
             // 
             // artanPanel1
             // 
             this.artanPanel1.BackColor = System.Drawing.Color.White;
             this.artanPanel1.BorderRadius = 30;
+            this.artanPanel1.Controls.Add(this.txt_Description);
             this.artanPanel1.ForeColor = System.Drawing.Color.Black;
             this.artanPanel1.GradientAngle = 90F;
             this.artanPanel1.GradientBottomColor = System.Drawing.Color.White;
@@ -360,6 +406,20 @@
             this.artanPanel1.Size = new System.Drawing.Size(359, 120);
             this.artanPanel1.TabIndex = 5;
             // 
+            // txt_Description
+            // 
+            this.txt_Description.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_Description.BottomBorderColorOnFocus = System.Drawing.Color.Black;
+            this.txt_Description.BottomColor = System.Drawing.Color.Black;
+            this.txt_Description.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Description.Location = new System.Drawing.Point(17, 3);
+            this.txt_Description.Multiline = true;
+            this.txt_Description.Name = "txt_Description";
+            this.txt_Description.Size = new System.Drawing.Size(327, 120);
+            this.txt_Description.TabIndex = 100;
+            this.txt_Description.Enter += new System.EventHandler(this.txt_Description_Enter);
+            this.txt_Description.Leave += new System.EventHandler(this.txt_Description_Leave);
+            // 
             // Add_Expense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -367,22 +427,25 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(414, 711);
             this.Controls.Add(this.txt_Date);
-            this.Controls.Add(this.txt_Total);
-            this.Controls.Add(this.txt_title);
+            this.Controls.Add(this.txt_Price);
+            this.Controls.Add(this.txt_Title);
+            this.Controls.Add(this.txt_Date_design);
+            this.Controls.Add(this.txt_Price_design);
+            this.Controls.Add(this.txt_title_design);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton6);
+            this.Controls.Add(this.rb_Others);
+            this.Controls.Add(this.rb_Bills);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton4);
+            this.Controls.Add(this.rb_Online);
+            this.Controls.Add(this.rb_Savings);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_AddExpense);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.rb_Transpo);
+            this.Controls.Add(this.rb_Food);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.artanPanel1);
             this.Controls.Add(this.label5);
@@ -401,6 +464,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.artanPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,22 +479,26 @@
         private System.Windows.Forms.Label label5;
         private ArtanPanel artanPanel1;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rb_Food;
+        private System.Windows.Forms.RadioButton rb_Transpo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_AddExpense;
         private System.Windows.Forms.Button btn_Cancel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rb_Online;
+        private System.Windows.Forms.RadioButton rb_Savings;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private RJTextBox txt_title;
-        private RJTextBox txt_Total;
-        private RJTextBox txt_Date;
+        private System.Windows.Forms.RadioButton rb_Others;
+        private System.Windows.Forms.RadioButton rb_Bills;
+        private RJTextBox txt_title_design;
+        private RJTextBox txt_Price_design;
+        private RJTextBox txt_Date_design;
+        private CustomBorderTextBox txt_Description;
+        private System.Windows.Forms.TextBox txt_Title;
+        private System.Windows.Forms.TextBox txt_Price;
+        private System.Windows.Forms.TextBox txt_Date;
     }
 }

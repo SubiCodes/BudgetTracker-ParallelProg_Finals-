@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.artanPanel3 = new BudgetTracker.ArtanPanel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.customBorderTextBox3 = new BudgetTracker.CustomBorderTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.artanPanel2 = new BudgetTracker.ArtanPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.customBorderTextBox1 = new BudgetTracker.CustomBorderTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.artanPanel1 = new BudgetTracker.ArtanPanel();
@@ -43,15 +47,13 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dg_FoodExpense = new System.Windows.Forms.DataGridView();
             this.artanPanel3.SuspendLayout();
-            this.artanPanel2.SuspendLayout();
-            this.artanPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.artanPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.artanPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_FoodExpense)).BeginInit();
             this.SuspendLayout();
             // 
             // artanPanel3
@@ -69,6 +71,17 @@
             this.artanPanel3.Name = "artanPanel3";
             this.artanPanel3.Size = new System.Drawing.Size(350, 118);
             this.artanPanel3.TabIndex = 9;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.MediumPurple;
+            this.pictureBox2.Image = global::BudgetTracker.Properties.Resources.searchIcon;
+            this.pictureBox2.Location = new System.Drawing.Point(276, 56);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // customBorderTextBox3
             // 
@@ -108,6 +121,17 @@
             this.artanPanel2.Name = "artanPanel2";
             this.artanPanel2.Size = new System.Drawing.Size(350, 118);
             this.artanPanel2.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.MediumPurple;
+            this.pictureBox1.Image = global::BudgetTracker.Properties.Resources.searchIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(277, 55);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // customBorderTextBox1
             // 
@@ -262,35 +286,40 @@
             this.label1.Text = "Savings";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // pictureBox2
+            // dg_FoodExpense
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.MediumPurple;
-            this.pictureBox2.Image = global::BudgetTracker.Properties.Resources.searchIcon;
-            this.pictureBox2.Location = new System.Drawing.Point(276, 56);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.MediumPurple;
-            this.pictureBox1.Image = global::BudgetTracker.Properties.Resources.searchIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(277, 55);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(431, 40);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(603, 603);
-            this.dataGridView1.TabIndex = 10;
+            this.dg_FoodExpense.AllowUserToAddRows = false;
+            this.dg_FoodExpense.AllowUserToDeleteRows = false;
+            this.dg_FoodExpense.AllowUserToResizeColumns = false;
+            this.dg_FoodExpense.AllowUserToResizeRows = false;
+            this.dg_FoodExpense.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            this.dg_FoodExpense.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dg_FoodExpense.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Variable Text", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_FoodExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dg_FoodExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dg_FoodExpense.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dg_FoodExpense.Location = new System.Drawing.Point(439, 40);
+            this.dg_FoodExpense.MultiSelect = false;
+            this.dg_FoodExpense.Name = "dg_FoodExpense";
+            this.dg_FoodExpense.ReadOnly = true;
+            this.dg_FoodExpense.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dg_FoodExpense.RowHeadersVisible = false;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe Fluent Icons", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
+            this.dg_FoodExpense.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dg_FoodExpense.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dg_FoodExpense.Size = new System.Drawing.Size(603, 603);
+            this.dg_FoodExpense.TabIndex = 10;
             // 
             // Savings
             // 
@@ -298,7 +327,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1068, 681);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dg_FoodExpense);
             this.Controls.Add(this.artanPanel3);
             this.Controls.Add(this.artanPanel2);
             this.Controls.Add(this.artanPanel1);
@@ -307,13 +336,13 @@
             this.Text = "Savings";
             this.artanPanel3.ResumeLayout(false);
             this.artanPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.artanPanel2.ResumeLayout(false);
             this.artanPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.artanPanel1.ResumeLayout(false);
             this.artanPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dg_FoodExpense)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -338,6 +367,6 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dg_FoodExpense;
     }
 }

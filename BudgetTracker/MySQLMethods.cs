@@ -2,6 +2,7 @@
 using MySqlX.XDevAPI.Relational;
 using Org.BouncyCastle.Asn1.Crmf;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace BudgetTracker
 {
-    
+
     internal class MySQLMethods
     {
         public void InitializeDataGridView(DataGridView Grid, Color HeaderColor)
@@ -23,7 +24,7 @@ namespace BudgetTracker
             Grid.EnableHeadersVisualStyles = false;
             Grid.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             Grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            Grid.RowTemplate.Height =50;
+            Grid.RowTemplate.Height = 50;
             Grid.ClearSelection();
             Grid.ScrollBars = ScrollBars.None;
             Grid.SelectionChanged += (s, e) => { Grid.ClearSelection(); };
@@ -50,7 +51,7 @@ namespace BudgetTracker
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
                 Conn.Open();
-                MySqlCommand CMD = new MySqlCommand(Query,Conn);
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
                 MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
                 DataTable Datatable = new DataTable();
                 Adapter.Fill(Datatable);
@@ -58,7 +59,7 @@ namespace BudgetTracker
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error Occured Loading the data: "+ex.Message);
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
 
         }
@@ -66,7 +67,7 @@ namespace BudgetTracker
         public void SearchTitle(String Table, String Title, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
-            String Query = "Select Title, Price, Date From "+Table+ " Where LOWER(Title) LIKE LOWER(@Title)";
+            String Query = "Select Title, Price, Date From " + Table + " Where LOWER(Title) LIKE LOWER(@Title)";
             try
             {
                 MySqlConnection Conn = new MySqlConnection(Connection);
@@ -103,6 +104,131 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+        public void OrderedData(String Query, DataGridView Grid)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
+
+        
+      
+        public void OrderedDataWithTitleByDate(String Table, String Title, DataGridView Grid, String Order)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "Select Title, Price, Date From " + Table + " WHERE Title = @Title Order By Date "+Order;
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Title", Title);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
+        public void OrderedDataWithTitleByPrice(String Table, String Title, DataGridView Grid, String Order)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "Select Title, Price, Date From " + Table + " WHERE Title = @Title Order By Price " + Order;
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Title", Title);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
+        public void OrderedDataWithDateByPrice(String Table, String Date, DataGridView Grid, String Order)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "Select Title, Price, Date From " + Table + " WHERE Date = @Date Order By Title "+Order;
+
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Date", Date);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
+        public void OrderedDataWithDateByTitle(String Table, String Date, DataGridView Grid, String Order)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "Select Title, Price, Date From " + Table + " WHERE Date = @Date Order By Title " + Order;
+
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Date", Date);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
+        public void OrderedDateAndTitleByPrice(String Table, String Title, String Date, DataGridView Grid, String Order)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "Select Title, Price, Date From " + Table + " WHERE Date = @Date AND Title = @Title Order By Price " + Order;
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Date", Date);
+                CMD.Parameters.AddWithValue("@Title",Title);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
     }
 }
+
 

@@ -290,6 +290,7 @@
             this.rb_LowestPrice.TabStop = true;
             this.rb_LowestPrice.Text = "Lowest Price";
             this.rb_LowestPrice.UseVisualStyleBackColor = false;
+            this.rb_LowestPrice.CheckedChanged += new System.EventHandler(this.rb_LowestPrice_CheckedChanged);
             // 
             // rb_HighestPrice
             // 
@@ -304,6 +305,7 @@
             this.rb_HighestPrice.TabStop = true;
             this.rb_HighestPrice.Text = "Highest Price";
             this.rb_HighestPrice.UseVisualStyleBackColor = false;
+            this.rb_HighestPrice.CheckedChanged += new System.EventHandler(this.rb_HighestPrice_CheckedChanged);
             // 
             // rb_ZtoA
             // 
@@ -318,6 +320,7 @@
             this.rb_ZtoA.TabStop = true;
             this.rb_ZtoA.Text = "Title Z-A";
             this.rb_ZtoA.UseVisualStyleBackColor = false;
+            this.rb_ZtoA.CheckedChanged += new System.EventHandler(this.rb_ZtoA_CheckedChanged);
             // 
             // rb_EarliestFirst
             // 
@@ -332,6 +335,7 @@
             this.rb_EarliestFirst.TabStop = true;
             this.rb_EarliestFirst.Text = "Earliest First";
             this.rb_EarliestFirst.UseVisualStyleBackColor = false;
+            this.rb_EarliestFirst.CheckedChanged += new System.EventHandler(this.rb_EarliestFirst_CheckedChanged);
             // 
             // rb_AtoZ
             // 
@@ -346,6 +350,7 @@
             this.rb_AtoZ.TabStop = true;
             this.rb_AtoZ.Text = "Title A-Z";
             this.rb_AtoZ.UseVisualStyleBackColor = false;
+            this.rb_AtoZ.CheckedChanged += new System.EventHandler(this.rb_AtoZ_CheckedChanged);
             // 
             // rb_LatestFirst
             // 
@@ -360,6 +365,7 @@
             this.rb_LatestFirst.TabStop = true;
             this.rb_LatestFirst.Text = "Latest First";
             this.rb_LatestFirst.UseVisualStyleBackColor = false;
+            this.rb_LatestFirst.CheckedChanged += new System.EventHandler(this.rb_LatestFirst_CheckedChanged);
             // 
             // label7
             // 
@@ -369,9 +375,9 @@
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.label7.Location = new System.Drawing.Point(30, 28);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 25);
+            this.label7.Size = new System.Drawing.Size(57, 25);
             this.label7.TabIndex = 3;
-            this.label7.Text = "Title:";
+            this.label7.Text = "Sort:";
             // 
             // artanPanel5
             // 

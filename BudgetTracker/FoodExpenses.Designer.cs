@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dg_FoodExpense = new System.Windows.Forms.DataGridView();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -90,14 +90,14 @@
             this.dg_FoodExpense.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.dg_FoodExpense.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dg_FoodExpense.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Variable Text", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dg_FoodExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Variable Text", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dg_FoodExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dg_FoodExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dg_FoodExpense.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dg_FoodExpense.Location = new System.Drawing.Point(439, 40);
@@ -106,12 +106,12 @@
             this.dg_FoodExpense.ReadOnly = true;
             this.dg_FoodExpense.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dg_FoodExpense.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe Fluent Icons", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Black;
-            this.dg_FoodExpense.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe Fluent Icons", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Black;
+            this.dg_FoodExpense.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dg_FoodExpense.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dg_FoodExpense.Size = new System.Drawing.Size(603, 603);
             this.dg_FoodExpense.TabIndex = 1;
@@ -399,6 +399,7 @@
             this.pb_DateSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_DateSearch.TabIndex = 8;
             this.pb_DateSearch.TabStop = false;
+            this.pb_DateSearch.Click += new System.EventHandler(this.pb_DateSearch_Click);
             // 
             // txt_DateSearch
             // 
@@ -406,10 +407,13 @@
             this.txt_DateSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_DateSearch.BottomBorderColorOnFocus = System.Drawing.Color.Black;
             this.txt_DateSearch.BottomColor = System.Drawing.Color.Black;
+            this.txt_DateSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.txt_DateSearch.Location = new System.Drawing.Point(35, 67);
             this.txt_DateSearch.Name = "txt_DateSearch";
             this.txt_DateSearch.Size = new System.Drawing.Size(271, 21);
             this.txt_DateSearch.TabIndex = 4;
+            this.txt_DateSearch.Enter += new System.EventHandler(this.txt_DateSearch_Enter);
+            this.txt_DateSearch.Leave += new System.EventHandler(this.txt_DateSearch_Leave);
             // 
             // label6
             // 
@@ -449,6 +453,7 @@
             this.pb_TitleSearch.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_TitleSearch.TabIndex = 8;
             this.pb_TitleSearch.TabStop = false;
+            this.pb_TitleSearch.Click += new System.EventHandler(this.pb_TitleSearch_Click);
             // 
             // txt_TitleSearch
             // 
@@ -456,10 +461,13 @@
             this.txt_TitleSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_TitleSearch.BottomBorderColorOnFocus = System.Drawing.Color.Black;
             this.txt_TitleSearch.BottomColor = System.Drawing.Color.Black;
+            this.txt_TitleSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TitleSearch.Location = new System.Drawing.Point(35, 67);
             this.txt_TitleSearch.Name = "txt_TitleSearch";
             this.txt_TitleSearch.Size = new System.Drawing.Size(271, 21);
             this.txt_TitleSearch.TabIndex = 4;
+            this.txt_TitleSearch.Enter += new System.EventHandler(this.txt_TitleSearch_Enter);
+            this.txt_TitleSearch.Leave += new System.EventHandler(this.txt_TitleSearch_Leave);
             // 
             // label5
             // 

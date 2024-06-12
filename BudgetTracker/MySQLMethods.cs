@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
 using Org.BouncyCastle.Asn1.Crmf;
 using System;
 using System.Collections.Generic;
@@ -62,5 +63,46 @@ namespace BudgetTracker
 
         }
 
+        public void SearchTitle(String Table, String Title, DataGridView Grid)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "Select Title, Price, Date From "+Table+ " Where LOWER(Title) LIKE LOWER(@Title)";
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Title", Title);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
+        public void SearchDate(String Table, String Date, DataGridView Grid)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "Select Title, Price, Date From " + Table + " Where Date = @Date";
+            try
+            {
+                MySqlConnection Conn = new MySqlConnection(Connection);
+                Conn.Open();
+                MySqlCommand CMD = new MySqlCommand(Query, Conn);
+                CMD.Parameters.AddWithValue("@Date", Date);
+                MySqlDataAdapter Adapter = new MySqlDataAdapter(CMD);
+                DataTable Datatable = new DataTable();
+                Adapter.Fill(Datatable);
+                Grid.DataSource = Datatable;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Occured Loading the data: " + ex.Message);
+            }
+        }
     }
 }
+

@@ -39,23 +39,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.artanPanel7 = new BudgetTracker.ArtanPanel();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lbl_OnlineToday = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.artanPanel6 = new BudgetTracker.ArtanPanel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lbl_OtherToday = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.artanPanel5 = new BudgetTracker.ArtanPanel();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_TranspoToday = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.artanPanel3 = new BudgetTracker.ArtanPanel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lbl_MonthBills = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.artanPanel2 = new BudgetTracker.ArtanPanel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lbl_MonthTotal = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.artanPanel8 = new BudgetTracker.ArtanPanel();
@@ -63,11 +63,11 @@
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.artanPanel4 = new BudgetTracker.ArtanPanel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.lbl_FoodToday = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.artanPanel1 = new BudgetTracker.ArtanPanel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lbl_TodayTotal = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -193,7 +193,7 @@
             // 
             this.artanPanel7.BackColor = System.Drawing.Color.White;
             this.artanPanel7.BorderRadius = 50;
-            this.artanPanel7.Controls.Add(this.label19);
+            this.artanPanel7.Controls.Add(this.lbl_OnlineToday);
             this.artanPanel7.Controls.Add(this.label20);
             this.artanPanel7.Controls.Add(this.pictureBox8);
             this.artanPanel7.ForeColor = System.Drawing.Color.Black;
@@ -205,17 +205,17 @@
             this.artanPanel7.Size = new System.Drawing.Size(263, 162);
             this.artanPanel7.TabIndex = 7;
             // 
-            // label19
+            // lbl_OnlineToday
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.BlueViolet;
-            this.label19.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(126, 94);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(114, 26);
-            this.label19.TabIndex = 6;
-            this.label19.Text = "₱ 100.00";
+            this.lbl_OnlineToday.AutoSize = true;
+            this.lbl_OnlineToday.BackColor = System.Drawing.Color.BlueViolet;
+            this.lbl_OnlineToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_OnlineToday.ForeColor = System.Drawing.Color.White;
+            this.lbl_OnlineToday.Location = new System.Drawing.Point(126, 94);
+            this.lbl_OnlineToday.Name = "lbl_OnlineToday";
+            this.lbl_OnlineToday.Size = new System.Drawing.Size(114, 26);
+            this.lbl_OnlineToday.TabIndex = 6;
+            this.lbl_OnlineToday.Text = "₱ 100.00";
             // 
             // label20
             // 
@@ -244,7 +244,7 @@
             // 
             this.artanPanel6.BackColor = System.Drawing.Color.White;
             this.artanPanel6.BorderRadius = 50;
-            this.artanPanel6.Controls.Add(this.label9);
+            this.artanPanel6.Controls.Add(this.lbl_OtherToday);
             this.artanPanel6.Controls.Add(this.label18);
             this.artanPanel6.Controls.Add(this.pictureBox7);
             this.artanPanel6.ForeColor = System.Drawing.Color.Black;
@@ -256,17 +256,17 @@
             this.artanPanel6.Size = new System.Drawing.Size(263, 162);
             this.artanPanel6.TabIndex = 7;
             // 
-            // label9
+            // lbl_OtherToday
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.BlueViolet;
-            this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(126, 94);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 26);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "₱ 100.00";
+            this.lbl_OtherToday.AutoSize = true;
+            this.lbl_OtherToday.BackColor = System.Drawing.Color.BlueViolet;
+            this.lbl_OtherToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_OtherToday.ForeColor = System.Drawing.Color.White;
+            this.lbl_OtherToday.Location = new System.Drawing.Point(126, 94);
+            this.lbl_OtherToday.Name = "lbl_OtherToday";
+            this.lbl_OtherToday.Size = new System.Drawing.Size(114, 26);
+            this.lbl_OtherToday.TabIndex = 6;
+            this.lbl_OtherToday.Text = "₱ 100.00";
             // 
             // label18
             // 
@@ -296,7 +296,7 @@
             this.artanPanel5.BackColor = System.Drawing.Color.White;
             this.artanPanel5.BorderRadius = 50;
             this.artanPanel5.Controls.Add(this.label8);
-            this.artanPanel5.Controls.Add(this.label7);
+            this.artanPanel5.Controls.Add(this.lbl_TranspoToday);
             this.artanPanel5.Controls.Add(this.pictureBox6);
             this.artanPanel5.ForeColor = System.Drawing.Color.Black;
             this.artanPanel5.GradientAngle = 90F;
@@ -319,17 +319,17 @@
             this.label8.Text = "Trasnpo  Expenses";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // label7
+            // lbl_TranspoToday
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.BlueViolet;
-            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(126, 94);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 26);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "₱ 100.00";
+            this.lbl_TranspoToday.AutoSize = true;
+            this.lbl_TranspoToday.BackColor = System.Drawing.Color.BlueViolet;
+            this.lbl_TranspoToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TranspoToday.ForeColor = System.Drawing.Color.White;
+            this.lbl_TranspoToday.Location = new System.Drawing.Point(126, 94);
+            this.lbl_TranspoToday.Name = "lbl_TranspoToday";
+            this.lbl_TranspoToday.Size = new System.Drawing.Size(114, 26);
+            this.lbl_TranspoToday.TabIndex = 6;
+            this.lbl_TranspoToday.Text = "₱ 100.00";
             // 
             // pictureBox6
             // 
@@ -346,7 +346,7 @@
             // 
             this.artanPanel3.BackColor = System.Drawing.Color.White;
             this.artanPanel3.BorderRadius = 50;
-            this.artanPanel3.Controls.Add(this.label16);
+            this.artanPanel3.Controls.Add(this.lbl_MonthBills);
             this.artanPanel3.Controls.Add(this.label13);
             this.artanPanel3.Controls.Add(this.pictureBox4);
             this.artanPanel3.ForeColor = System.Drawing.Color.Black;
@@ -358,17 +358,17 @@
             this.artanPanel3.Size = new System.Drawing.Size(370, 162);
             this.artanPanel3.TabIndex = 2;
             // 
-            // label16
+            // lbl_MonthBills
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.label16.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(135, 84);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(154, 35);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "₱ 100.00";
+            this.lbl_MonthBills.AutoSize = true;
+            this.lbl_MonthBills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.lbl_MonthBills.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MonthBills.ForeColor = System.Drawing.Color.White;
+            this.lbl_MonthBills.Location = new System.Drawing.Point(135, 84);
+            this.lbl_MonthBills.Name = "lbl_MonthBills";
+            this.lbl_MonthBills.Size = new System.Drawing.Size(154, 35);
+            this.lbl_MonthBills.TabIndex = 7;
+            this.lbl_MonthBills.Text = "₱ 100.00";
             // 
             // label13
             // 
@@ -397,7 +397,7 @@
             // 
             this.artanPanel2.BackColor = System.Drawing.Color.White;
             this.artanPanel2.BorderRadius = 50;
-            this.artanPanel2.Controls.Add(this.label15);
+            this.artanPanel2.Controls.Add(this.lbl_MonthTotal);
             this.artanPanel2.Controls.Add(this.label12);
             this.artanPanel2.Controls.Add(this.pictureBox3);
             this.artanPanel2.ForeColor = System.Drawing.Color.Black;
@@ -409,17 +409,17 @@
             this.artanPanel2.Size = new System.Drawing.Size(370, 162);
             this.artanPanel2.TabIndex = 1;
             // 
-            // label15
+            // lbl_MonthTotal
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.label15.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(135, 78);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(154, 35);
-            this.label15.TabIndex = 6;
-            this.label15.Text = "₱ 100.00";
+            this.lbl_MonthTotal.AutoSize = true;
+            this.lbl_MonthTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.lbl_MonthTotal.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_MonthTotal.ForeColor = System.Drawing.Color.White;
+            this.lbl_MonthTotal.Location = new System.Drawing.Point(135, 78);
+            this.lbl_MonthTotal.Name = "lbl_MonthTotal";
+            this.lbl_MonthTotal.Size = new System.Drawing.Size(154, 35);
+            this.lbl_MonthTotal.TabIndex = 6;
+            this.lbl_MonthTotal.Text = "₱ 100.00";
             // 
             // label12
             // 
@@ -499,7 +499,7 @@
             // 
             this.artanPanel4.BackColor = System.Drawing.Color.White;
             this.artanPanel4.BorderRadius = 50;
-            this.artanPanel4.Controls.Add(this.label17);
+            this.artanPanel4.Controls.Add(this.lbl_FoodToday);
             this.artanPanel4.Controls.Add(this.label6);
             this.artanPanel4.Controls.Add(this.pictureBox5);
             this.artanPanel4.ForeColor = System.Drawing.Color.Black;
@@ -511,17 +511,17 @@
             this.artanPanel4.Size = new System.Drawing.Size(263, 162);
             this.artanPanel4.TabIndex = 3;
             // 
-            // label17
+            // lbl_FoodToday
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.BlueViolet;
-            this.label17.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(124, 94);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(114, 26);
-            this.label17.TabIndex = 6;
-            this.label17.Text = "₱ 100.00";
+            this.lbl_FoodToday.AutoSize = true;
+            this.lbl_FoodToday.BackColor = System.Drawing.Color.BlueViolet;
+            this.lbl_FoodToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_FoodToday.ForeColor = System.Drawing.Color.White;
+            this.lbl_FoodToday.Location = new System.Drawing.Point(124, 94);
+            this.lbl_FoodToday.Name = "lbl_FoodToday";
+            this.lbl_FoodToday.Size = new System.Drawing.Size(114, 26);
+            this.lbl_FoodToday.TabIndex = 6;
+            this.lbl_FoodToday.Text = "₱ 100.00";
             // 
             // label6
             // 
@@ -550,7 +550,7 @@
             // 
             this.artanPanel1.BackColor = System.Drawing.Color.White;
             this.artanPanel1.BorderRadius = 50;
-            this.artanPanel1.Controls.Add(this.label14);
+            this.artanPanel1.Controls.Add(this.lbl_TodayTotal);
             this.artanPanel1.Controls.Add(this.label11);
             this.artanPanel1.Controls.Add(this.pictureBox2);
             this.artanPanel1.ForeColor = System.Drawing.Color.Black;
@@ -562,17 +562,17 @@
             this.artanPanel1.Size = new System.Drawing.Size(370, 162);
             this.artanPanel1.TabIndex = 0;
             // 
-            // label14
+            // lbl_TodayTotal
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
-            this.label14.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(135, 83);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(154, 35);
-            this.label14.TabIndex = 5;
-            this.label14.Text = "₱ 100.00";
+            this.lbl_TodayTotal.AutoSize = true;
+            this.lbl_TodayTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
+            this.lbl_TodayTotal.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TodayTotal.ForeColor = System.Drawing.Color.White;
+            this.lbl_TodayTotal.Location = new System.Drawing.Point(135, 83);
+            this.lbl_TodayTotal.Name = "lbl_TodayTotal";
+            this.lbl_TodayTotal.Size = new System.Drawing.Size(154, 35);
+            this.lbl_TodayTotal.TabIndex = 5;
+            this.lbl_TodayTotal.Text = "₱ 100.00";
             // 
             // label11
             // 
@@ -623,6 +623,7 @@
             this.Controls.Add(this.artanPanel1);
             this.Name = "HomeForm";
             this.Text = "HomeForm";
+    
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.artanPanel7.ResumeLayout(false);
             this.artanPanel7.PerformLayout();
@@ -680,20 +681,20 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label lbl_TodayTotal;
+        private System.Windows.Forms.Label lbl_MonthTotal;
+        private System.Windows.Forms.Label lbl_MonthBills;
+        private System.Windows.Forms.Label lbl_FoodToday;
         private ArtanPanel artanPanel5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lbl_TranspoToday;
         private System.Windows.Forms.PictureBox pictureBox6;
         private ArtanPanel artanPanel6;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lbl_OtherToday;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox pictureBox7;
         private ArtanPanel artanPanel7;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lbl_OnlineToday;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label21;

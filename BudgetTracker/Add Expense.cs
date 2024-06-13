@@ -70,7 +70,7 @@ namespace BudgetTracker
 
             if (rb_Food.Checked) { Type = "food_expense";}
             if (rb_Transpo.Checked) { Type = "transpo_expense";}
-            if (rb_Savings.Checked) { Type = "savongs";}
+            if (rb_Savings.Checked) { Type = "savings";}
             if (rb_Online.Checked) { Type = "online_payment";}
             if (rb_Bills.Checked) { Type = "bills";}
             if (rb_Others.Checked) { Type = "other_expense";}

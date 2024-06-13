@@ -1,11 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,166 +16,116 @@ namespace BudgetTracker
             Update.Start();
         }
 
-        private String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+        private string Connection = "server=localhost;user id=root;password=;database=budget_tracker";
         private Timer Update;
 
-
-      
-
-        private void UpdateLabels(object sender, EventArgs e)
+        private async void UpdateLabels(object sender, EventArgs e)
         {
-            Task.Run(() =>
-            {
-                Double todayExpense = GetTodayExpense();
-                UpdateLabel(lbl_TodayTotal, "₱ " + todayExpense.ToString("F2"));
-            });
+            // Run all tasks in parallel
+            var todayExpenseTask = GetTodayExpenseAsync();
+            var monthExpenseTask = GetThisMonthExpenseAsync();
+            var billsMonthlyTask = GetBillsTotalAsync();
+            var foodTodayTask = FoodTodayAsync();
+            var onlineTodayTask = OnlineTodayAsync();
+            var transpoTodayTask = TranspoTodayAsync();
+            var otherExpenseToday = OtherExpenseToday();
+            var savingsThisYear = SavingsTotal();
 
-            Task.Run(() =>
-            {
-                Double monthExpense = GetThisMonthExpense();
-                UpdateLabel(lbl_MonthTotal, "₱ " + monthExpense.ToString("F2"));
-            });
+            await Task.WhenAll(todayExpenseTask, monthExpenseTask, billsMonthlyTask, foodTodayTask, onlineTodayTask, transpoTodayTask,otherExpenseToday, savingsThisYear);
 
-            Task.Run(() =>
-            {
-                Double billsMonthly = GetBillsTotal();
-                UpdateLabel(lbl_MonthBills, "₱ " + billsMonthly.ToString("F2"));
-            });
-
-            Task.Run(() =>
-            {
-                Double foodToday = FoodToday();
-                UpdateLabel(lbl_FoodToday, "₱ " + foodToday.ToString("F2"));
-            });
-
-            Task.Run(() =>
-            {
-                Double onlineToday = OnlineToday();
-                UpdateLabel(lbl_OnlineToday, "₱ " + onlineToday.ToString("F2"));
-            });
-
+            // Update labels once all tasks are completed
+            UpdateLabel(lbl_TodayTotal, "₱ " + todayExpenseTask.Result.ToString("F2"));
+            UpdateLabel(lbl_MonthTotal, "₱ " + monthExpenseTask.Result.ToString("F2"));
+            UpdateLabel(lbl_MonthBills, "₱ " + billsMonthlyTask.Result.ToString("F2"));
+            UpdateLabel(lbl_FoodToday, "₱ " + foodTodayTask.Result.ToString("F2"));
+            UpdateLabel(lbl_OnlineToday, "₱ " + onlineTodayTask.Result.ToString("F2"));
+            UpdateLabel(lbl_TranspoToday, "₱ " + transpoTodayTask.Result.ToString("F2"));
+            UpdateLabel(lbl_OtherToday, "₱ " + otherExpenseToday.Result.ToString("F2"));
+            UpdateLabel(lbl_Savings, "₱ " + savingsThisYear.Result.ToString("F2"));
         }
 
-
-        public void UpdateLabel(Label label, String Text)
+        public void UpdateLabel(Label label, string text)
         {
             if (label.InvokeRequired)
             {
-                label.Invoke((MethodInvoker)(() => label.Text = Text));
+                label.Invoke((MethodInvoker)(() => label.Text = text));
             }
             else
             {
-                label.Text = Text;
+                label.Text = text;
             }
         }
-        
 
-        public Double ExecuteSum(MySqlConnection Conn, String Query)
+        public async Task<double> ExecuteSumAsync(string query)
         {
-            MySqlCommand CMD = new MySqlCommand(Query, Conn);
-            object Result = CMD.ExecuteScalar();
-
-            if (Result != DBNull.Value) { return (Double)Result;}
-            else { return 0.00;}
+            using (var conn = new MySqlConnection(Connection))
+            {
+                await conn.OpenAsync();
+                using (var cmd = new MySqlCommand(query, conn))
+                {
+                    object result = await cmd.ExecuteScalarAsync();
+                    return result != DBNull.Value ? Convert.ToDouble(result) : 0.0;
+                }
+            }
         }
 
-
-        public Double GetTodayExpense()
+        public async Task<double> GetTodayExpenseAsync()
         {
+            var query1Task = ExecuteSumAsync("SELECT SUM(Price) FROM food_expense WHERE DATE(Date) = CURDATE()");
+            var query2Task = ExecuteSumAsync("SELECT SUM(Price) FROM bills WHERE DATE(Date) = CURDATE()");
+            var query3Task = ExecuteSumAsync("SELECT SUM(Price) FROM online_payment WHERE DATE(Date) = CURDATE()");
+            var query4Task = ExecuteSumAsync("SELECT SUM(Price) FROM other_expense WHERE DATE(Date) = CURDATE()");
+            var query5Task = ExecuteSumAsync("SELECT SUM(Price) FROM savings WHERE DATE(Date) = CURDATE()");
+            var query6Task = ExecuteSumAsync("SELECT SUM(Price) FROM transpo_expense WHERE DATE(Date) = CURDATE()");
 
-            Double TodayExpense = 0;
+            await Task.WhenAll(query1Task, query2Task, query3Task, query4Task, query5Task, query6Task);
 
-            MySqlConnection Conn = new MySqlConnection(Connection);
-            Conn.Open();
-            MySqlCommand CMD = new MySqlCommand();
-
-            string query1 = "SELECT SUM(Price) FROM food_expense WHERE DATE(Date) = CURDATE()";
-            string query2 = "SELECT SUM(Price) FROM bills WHERE DATE(Date) = CURDATE()";
-            string query3 = "SELECT SUM(Price) FROM online_payment WHERE DATE(Date) = CURDATE()";
-            string query4 = "SELECT SUM(Price) FROM other_expense WHERE DATE(Date) = CURDATE()";
-            string query5 = "SELECT SUM(Price) FROM savings WHERE DATE(Date) = CURDATE()";
-            string query6 = "SELECT SUM(Price) FROM transpo_expense WHERE DATE(Date) = CURDATE()";
-
-            TodayExpense += ExecuteSum(Conn,query1);
-            TodayExpense += ExecuteSum(Conn, query2);
-            TodayExpense += ExecuteSum(Conn, query3);
-            TodayExpense += ExecuteSum(Conn, query4);
-            TodayExpense += ExecuteSum(Conn, query5);
-            TodayExpense += ExecuteSum(Conn, query6);
-
-            return TodayExpense;
+            double todayExpense = query1Task.Result + query2Task.Result + query3Task.Result + query4Task.Result + query5Task.Result + query6Task.Result;
+            return todayExpense;
         }
 
-        public Double GetThisMonthExpense()
+        public async Task<double> GetThisMonthExpenseAsync()
         {
+            var query1Task = ExecuteSumAsync("SELECT SUM(Price) FROM food_expense WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)");
+            var query2Task = ExecuteSumAsync("SELECT SUM(Price) FROM bills WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)");
+            var query3Task = ExecuteSumAsync("SELECT SUM(Price) FROM online_payment WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)");
+            var query4Task = ExecuteSumAsync("SELECT SUM(Price) FROM other_expense WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)");
+            var query5Task = ExecuteSumAsync("SELECT SUM(Price) FROM savings WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)");
+            var query6Task = ExecuteSumAsync("SELECT SUM(Price) FROM transpo_expense WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)");
 
-            Double MonthlyExpense = 0;
+            await Task.WhenAll(query1Task, query2Task, query3Task, query4Task, query5Task, query6Task);
 
-            MySqlConnection Conn = new MySqlConnection(Connection);
-            Conn.Open();
-            MySqlCommand CMD = new MySqlCommand();
-
-            string query1 = "SELECT SUM(Price) FROM `food_expense` WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)";
-            string query2 = "SELECT SUM(Price) FROM `bills` WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)";
-            string query3 = "SELECT SUM(Price) FROM `online_payment` WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)";
-            string query4 = "SELECT SUM(Price) FROM `other_expense` WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)";
-            string query5 = "SELECT SUM(Price) FROM `savings` WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)";
-            string query6 = "SELECT SUM(Price) FROM `transpo_expense` WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)";
-
-            MonthlyExpense += ExecuteSum(Conn, query1);
-            MonthlyExpense += ExecuteSum(Conn, query2);
-            MonthlyExpense += ExecuteSum(Conn, query3);
-            MonthlyExpense += ExecuteSum(Conn, query4);
-            MonthlyExpense += ExecuteSum(Conn, query5);
-            MonthlyExpense += ExecuteSum(Conn, query6);
-
-            return MonthlyExpense;
+            double monthlyExpense = query1Task.Result + query2Task.Result + query3Task.Result + query4Task.Result + query5Task.Result + query6Task.Result;
+            return monthlyExpense;
         }
 
-        public Double GetBillsTotal()
+        public Task<double> GetBillsTotalAsync()
         {
-            Double BillsTotal = 0;
-
-            MySqlConnection Conn = new MySqlConnection(Connection);
-            Conn.Open();
-            MySqlCommand CMD = new MySqlCommand();
-
-            String query = "Select SUM(Price) FROM `bills` WHERE MONTH(DATE) = MONTH(CURRENT_DATE) AND YEAR(Date) =  YEAR(CURRENT_DATE)";
-
-            BillsTotal += ExecuteSum(Conn, query);
-
-            return BillsTotal;
+            return ExecuteSumAsync("SELECT SUM(Price) FROM bills WHERE MONTH(Date) = MONTH(CURRENT_DATE) AND YEAR(Date) = YEAR(CURRENT_DATE)");
         }
 
-        public Double FoodToday()
+        public Task<double> FoodTodayAsync()
         {
-            Double FoodToday = 0;
-
-            MySqlConnection Conn = new MySqlConnection(Connection);
-            Conn.Open();
-            MySqlCommand CMD = new MySqlCommand();
-
-            String query = "Select SUM(Price) FROM `food_expense` WHERE DATE(Date) = CURDATE()";
-
-            FoodToday += ExecuteSum(Conn, query);
-
-            return FoodToday;
+            return ExecuteSumAsync("SELECT SUM(Price) FROM food_expense WHERE DATE(Date) = CURDATE()");
         }
 
-        public Double OnlineToday()
+        public Task<double> OnlineTodayAsync()
         {
-            Double OnlineToday = 0;
-
-            MySqlConnection Conn = new MySqlConnection(Connection);
-            Conn.Open();
-            MySqlCommand CMD = new MySqlCommand();
-
-            String query = "Select SUM(Price) FROM `online_payment` WHERE DATE(Date) = CURDATE()";
-
-            OnlineToday += ExecuteSum(Conn, query);
-
-            return OnlineToday;
+            return ExecuteSumAsync("SELECT SUM(Price) FROM online_payment WHERE DATE(Date) = CURDATE()");
         }
 
+        public Task<double> TranspoTodayAsync()
+        {
+            return ExecuteSumAsync("SELECT SUM(Price) FROM transpo_expense WHERE DATE(Date) = CURDATE()");
+        }
+
+        public Task<double> OtherExpenseToday()
+        {
+            return ExecuteSumAsync("SELECT SUM(Price) FROM other_expense WHERE DATE(Date) = CURDATE()");
+        }
+        public Task<double> SavingsTotal()
+        {
+            return ExecuteSumAsync("SELECT SUM(Price) FROM savings WHERE YEAR(Date) = YEAR(CURDATE())");
+        }
     }
 }

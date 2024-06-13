@@ -214,8 +214,20 @@ namespace BudgetTracker
 
         private void dg_FoodExpense_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            string description = dg_FoodExpense.Rows[e.RowIndex].Cells["Description"].Value.ToString();
-            MessageBox.Show(description, "Description", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            string Description = dg_FoodExpense.Rows[e.RowIndex].Cells["Description"].Value.ToString();
+            string Date = dg_FoodExpense.Rows[e.RowIndex].Cells["Date"].Value.ToString();
+            string Title = dg_FoodExpense.Rows[e.RowIndex].Cells["Title"].Value.ToString();
+
+            DateTime Format;
+
+            DateTime.TryParse(Date, out Format);
+
+            DialogResult result = MessageBox.Show(Description, "Do you want to delete this?", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (result == DialogResult.Yes)
+            {
+                SQLMethods.Delete("food_expense", Title, Format.ToString("yyyy-MM-dd"));
+                SQLMethods.LoadAllData("food_expense", dg_FoodExpense);
+            }
         }
     }
 }

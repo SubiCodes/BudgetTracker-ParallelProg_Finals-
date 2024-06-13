@@ -309,6 +309,40 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+
+        public void Delete(String Table, String Title, String Date)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "DELETE FROM "+ Table +" WHERE Title = @Title AND DATE(Date) = DATE(@Date)";
+            MySqlConnection Conn = new MySqlConnection( Connection );
+            Conn.Open() ;
+            MySqlCommand CMD = new MySqlCommand(Query, Conn);
+            CMD.Parameters.AddWithValue("@Title", Title);
+            CMD.Parameters.AddWithValue("@Date", Date);
+            CMD.ExecuteNonQuery();
+        }
+
+        public bool CheckExist(String Table, String Title, String Date)
+        {
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Query = "SELECT Title FROM " + Table +" WHERE Title = @Title AND DATE(Date) = DATE(@Date)";
+            MySqlConnection Conn = new MySqlConnection(Connection);
+            Conn.Open();
+            MySqlCommand CMD = new MySqlCommand(Query, Conn);
+            CMD.Parameters.AddWithValue("@Title", Title);
+            CMD.Parameters.AddWithValue("@Date", Date);
+            object result = CMD.ExecuteScalar();
+
+            if(result == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+            
+        }
     }
 }
 

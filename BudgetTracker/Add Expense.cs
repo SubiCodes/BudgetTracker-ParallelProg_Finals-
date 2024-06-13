@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace BudgetTracker
 {
     public partial class Add_Expense : Form
@@ -20,7 +21,7 @@ namespace BudgetTracker
         {
             InitializeComponent();
         }
-
+        MySQLMethods Methods = new MySQLMethods();
         private void Add_Expense_Load(object sender, EventArgs e)
         {
             SetBorderColorButton(btn_AddExpense, ColorTranslator.FromHtml("#6A0DAD"));
@@ -33,7 +34,7 @@ namespace BudgetTracker
 
             txt_Title.Text = "(e.g. \"Title\")";
             txt_Price.Text = "(e.g. \"123.45\")";
-            txt_Date.Text = "YYY-MM-DD";
+            txt_Date.Text = "YYYY-MM-DD";
             txt_Description.Text = "(e.g. \"This is an example of a description\")";
 
         }
@@ -68,6 +69,8 @@ namespace BudgetTracker
             String Description = txt_Description.Text;
             String Type = null;
 
+          
+
             if (rb_Food.Checked) { Type = "food_expense";}
             if (rb_Transpo.Checked) { Type = "transpo_expense";}
             if (rb_Savings.Checked) { Type = "savings";}
@@ -92,6 +95,13 @@ namespace BudgetTracker
                 MessageBox.Show("Missing Inputs!", "Inputs Missing", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
+            if (Methods.CheckExist(Type, Title, Date) == false)
+            {
+                MessageBox.Show("Title Already Exist", "Title existing", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
             string Query = $"INSERT INTO `{Type}` (`Title`, `Price`, `Date`, `Description`) VALUES (@Title, @Price, @Date, @Description)";
 
@@ -159,7 +169,7 @@ namespace BudgetTracker
 
         private void txt_Date_Enter(object sender, EventArgs e)
         {
-            if (txt_Date.Text == "YYY-MM-DD")
+            if (txt_Date.Text == "YYYY-MM-DD")
             {
                 txt_Date.Text = "";
                 txt_Date.ForeColor = Color.Black;
@@ -171,7 +181,7 @@ namespace BudgetTracker
             if (txt_Date.Text == "")
             {
                 txt_Date.ForeColor = Color.DarkGray;
-                txt_Date.Text = "YYY-MM-DD";
+                txt_Date.Text = "YYYY-MM-DD";
             }
         }
 

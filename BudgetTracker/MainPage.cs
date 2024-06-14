@@ -111,19 +111,19 @@ namespace BudgetTracker
         private void pnl_OnlinePayments_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OnlinePayments, sender);
-            OpenFormOnPress(new OnlinePayments(), sender);
+            OpenFormOnPress(new OnlinePayment(), sender);
         }
 
         private void pb_OnlinePayments_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OnlinePayments, sender);
-            OpenFormOnPress(new OnlinePayments(), sender);
+            OpenFormOnPress(new OnlinePayment(), sender);
         }
 
         private void lbl_OnlinePayments_Click(object sender, EventArgs e)
         {
             ChangePanelColor(pnl_OnlinePayments, sender);
-            OpenFormOnPress(new OnlinePayments(), sender);
+            OpenFormOnPress(new OnlinePayment(), sender);
         }
         private void pnl_Bills_Click(object sender, EventArgs e)
         {

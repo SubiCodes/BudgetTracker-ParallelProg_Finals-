@@ -22,10 +22,10 @@ namespace BudgetTracker
         private void Bills_Load(object sender, EventArgs e)
         {
             SQLMethods.LoadAllData("bills", dg_Bills);
-            label31.ForeColor = Color.WhiteSmoke;
-            label31.Text = "YYYY-MM-DD";
             txt_TitleSearch.ForeColor = Color.WhiteSmoke;
             txt_TitleSearch.Text = "(e.g. \"Title\")";
+            txt_DateSearch.ForeColor = Color.WhiteSmoke;
+            txt_DateSearch.Text = "YYYY-MM-DD";
         }
 
         private void pb_TitleSearch_Click(object sender, EventArgs e)

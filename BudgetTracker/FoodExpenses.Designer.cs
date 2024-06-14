@@ -414,7 +414,7 @@
             this.txt_DateSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_DateSearch.BottomBorderColorOnFocus = System.Drawing.Color.Black;
             this.txt_DateSearch.BottomColor = System.Drawing.Color.Black;
-            this.txt_DateSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txt_DateSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DateSearch.Location = new System.Drawing.Point(35, 67);
             this.txt_DateSearch.Name = "txt_DateSearch";
             this.txt_DateSearch.Size = new System.Drawing.Size(271, 21);
@@ -468,7 +468,7 @@
             this.txt_TitleSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_TitleSearch.BottomBorderColorOnFocus = System.Drawing.Color.Black;
             this.txt_TitleSearch.BottomColor = System.Drawing.Color.Black;
-            this.txt_TitleSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TitleSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TitleSearch.Location = new System.Drawing.Point(35, 67);
             this.txt_TitleSearch.Name = "txt_TitleSearch";
             this.txt_TitleSearch.Size = new System.Drawing.Size(271, 21);

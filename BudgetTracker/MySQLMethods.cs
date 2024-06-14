@@ -45,7 +45,7 @@ namespace BudgetTracker
         }
         public void LoadAllData(String Table, DataGridView Grid)
         {
-            String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
+            String Connection = "server=localhost;user id =root;password=;database=budget_tracker;Convert Zero Datetime=True";
             String Query = "Select * From " + Table + " Order by Date DESC";
             try
             {

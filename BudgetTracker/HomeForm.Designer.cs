@@ -209,13 +209,12 @@
             // 
             // lbl_OnlineToday
             // 
-            this.lbl_OnlineToday.AutoSize = true;
             this.lbl_OnlineToday.BackColor = System.Drawing.Color.BlueViolet;
             this.lbl_OnlineToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_OnlineToday.ForeColor = System.Drawing.Color.White;
             this.lbl_OnlineToday.Location = new System.Drawing.Point(126, 94);
             this.lbl_OnlineToday.Name = "lbl_OnlineToday";
-            this.lbl_OnlineToday.Size = new System.Drawing.Size(100, 26);
+            this.lbl_OnlineToday.Size = new System.Drawing.Size(134, 26);
             this.lbl_OnlineToday.TabIndex = 6;
             this.lbl_OnlineToday.Text = "₱ 00.00";
             // 
@@ -260,13 +259,12 @@
             // 
             // lbl_OtherToday
             // 
-            this.lbl_OtherToday.AutoSize = true;
             this.lbl_OtherToday.BackColor = System.Drawing.Color.BlueViolet;
             this.lbl_OtherToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_OtherToday.ForeColor = System.Drawing.Color.White;
             this.lbl_OtherToday.Location = new System.Drawing.Point(126, 94);
             this.lbl_OtherToday.Name = "lbl_OtherToday";
-            this.lbl_OtherToday.Size = new System.Drawing.Size(100, 26);
+            this.lbl_OtherToday.Size = new System.Drawing.Size(134, 26);
             this.lbl_OtherToday.TabIndex = 6;
             this.lbl_OtherToday.Text = "₱ 00.00";
             // 
@@ -323,13 +321,12 @@
             // 
             // lbl_TranspoToday
             // 
-            this.lbl_TranspoToday.AutoSize = true;
             this.lbl_TranspoToday.BackColor = System.Drawing.Color.BlueViolet;
             this.lbl_TranspoToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TranspoToday.ForeColor = System.Drawing.Color.White;
             this.lbl_TranspoToday.Location = new System.Drawing.Point(126, 94);
             this.lbl_TranspoToday.Name = "lbl_TranspoToday";
-            this.lbl_TranspoToday.Size = new System.Drawing.Size(100, 26);
+            this.lbl_TranspoToday.Size = new System.Drawing.Size(133, 26);
             this.lbl_TranspoToday.TabIndex = 6;
             this.lbl_TranspoToday.Text = "₱ 00.00";
             // 
@@ -362,13 +359,12 @@
             // 
             // lbl_MonthBills
             // 
-            this.lbl_MonthBills.AutoSize = true;
             this.lbl_MonthBills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
             this.lbl_MonthBills.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_MonthBills.ForeColor = System.Drawing.Color.White;
             this.lbl_MonthBills.Location = new System.Drawing.Point(135, 84);
             this.lbl_MonthBills.Name = "lbl_MonthBills";
-            this.lbl_MonthBills.Size = new System.Drawing.Size(135, 35);
+            this.lbl_MonthBills.Size = new System.Drawing.Size(232, 35);
             this.lbl_MonthBills.TabIndex = 7;
             this.lbl_MonthBills.Text = "₱ 00.00";
             // 
@@ -464,13 +460,12 @@
             // 
             // lbl_Savings
             // 
-            this.lbl_Savings.AutoSize = true;
             this.lbl_Savings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
             this.lbl_Savings.Font = new System.Drawing.Font("MS Reference Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Savings.ForeColor = System.Drawing.Color.White;
             this.lbl_Savings.Location = new System.Drawing.Point(206, 73);
             this.lbl_Savings.Name = "lbl_Savings";
-            this.lbl_Savings.Size = new System.Drawing.Size(225, 60);
+            this.lbl_Savings.Size = new System.Drawing.Size(336, 60);
             this.lbl_Savings.TabIndex = 7;
             this.lbl_Savings.Text = "₱ 00.00";
             // 
@@ -515,13 +510,12 @@
             // 
             // lbl_FoodToday
             // 
-            this.lbl_FoodToday.AutoSize = true;
             this.lbl_FoodToday.BackColor = System.Drawing.Color.BlueViolet;
             this.lbl_FoodToday.Font = new System.Drawing.Font("MS Reference Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_FoodToday.ForeColor = System.Drawing.Color.White;
             this.lbl_FoodToday.Location = new System.Drawing.Point(124, 94);
             this.lbl_FoodToday.Name = "lbl_FoodToday";
-            this.lbl_FoodToday.Size = new System.Drawing.Size(100, 26);
+            this.lbl_FoodToday.Size = new System.Drawing.Size(135, 26);
             this.lbl_FoodToday.TabIndex = 6;
             this.lbl_FoodToday.Text = "₱ 00.00";
             // 
@@ -566,13 +560,12 @@
             // 
             // lbl_TodayTotal
             // 
-            this.lbl_TodayTotal.AutoSize = true;
             this.lbl_TodayTotal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(42)))), ((int)(((byte)(132)))));
             this.lbl_TodayTotal.Font = new System.Drawing.Font("MS Reference Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_TodayTotal.ForeColor = System.Drawing.Color.White;
             this.lbl_TodayTotal.Location = new System.Drawing.Point(135, 83);
             this.lbl_TodayTotal.Name = "lbl_TodayTotal";
-            this.lbl_TodayTotal.Size = new System.Drawing.Size(135, 35);
+            this.lbl_TodayTotal.Size = new System.Drawing.Size(232, 35);
             this.lbl_TodayTotal.TabIndex = 5;
             this.lbl_TodayTotal.Text = "₱ 00.00";
             // 
@@ -627,28 +620,21 @@
             this.Text = "HomeForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.artanPanel7.ResumeLayout(false);
-            this.artanPanel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.artanPanel6.ResumeLayout(false);
-            this.artanPanel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.artanPanel5.ResumeLayout(false);
-            this.artanPanel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.artanPanel3.ResumeLayout(false);
-            this.artanPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.artanPanel2.ResumeLayout(false);
             this.artanPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.artanPanel8.ResumeLayout(false);
-            this.artanPanel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.artanPanel4.ResumeLayout(false);
-            this.artanPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.artanPanel1.ResumeLayout(false);
-            this.artanPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

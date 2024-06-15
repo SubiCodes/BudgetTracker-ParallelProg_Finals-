@@ -123,6 +123,16 @@ namespace BudgetTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap carloWithBG {
+            get {
+                object obj = ResourceManager.GetObject("carloWithBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap electricity_icon {
             get {
                 object obj = ResourceManager.GetObject("electricity_icon", resourceCulture);
@@ -213,6 +223,16 @@ namespace BudgetTracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap noBG {
+            get {
+                object obj = ResourceManager.GetObject("noBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap OnlineIcon {
             get {
                 object obj = ResourceManager.GetObject("OnlineIcon", resourceCulture);
@@ -246,6 +266,26 @@ namespace BudgetTracker.Properties {
         internal static System.Drawing.Bitmap PesoSign {
             get {
                 object obj = ResourceManager.GetObject("PesoSign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ramzNoBG {
+            get {
+                object obj = ResourceManager.GetObject("ramzNoBG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap russelNoBg {
+            get {
+                object obj = ResourceManager.GetObject("russelNoBg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

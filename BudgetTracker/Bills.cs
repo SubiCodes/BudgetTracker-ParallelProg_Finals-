@@ -205,6 +205,7 @@ namespace BudgetTracker
             DateTime.TryParse(Date, out Format);
 
             DialogResult result = MessageBox.Show(Description, "Do you want to delete this?", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
             if (result == DialogResult.Yes)
             {
                 SQLMethods.Delete("bills", Title, Format.ToString("yyyy-MM-dd"));

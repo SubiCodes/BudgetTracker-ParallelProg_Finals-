@@ -18,6 +18,7 @@ namespace BudgetTracker
 
         private string Connection = "server=localhost;user id=root;password=;database=budget_tracker";
         private Timer Update;
+        AboutUs contactForm = new AboutUs();
 
         private async void UpdateLabels(object sender, EventArgs e)
         {
@@ -126,6 +127,18 @@ namespace BudgetTracker
         public Task<double> SavingsTotal()
         {
             return ExecuteSumAsync("SELECT SUM(Price) FROM savings WHERE YEAR(Date) = YEAR(CURDATE())");
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            if (!contactForm.Visible)
+            {
+                contactForm.Show();
+            }
+            else
+            {
+                contactForm.BringToFront();
+            }
         }
     }
 }

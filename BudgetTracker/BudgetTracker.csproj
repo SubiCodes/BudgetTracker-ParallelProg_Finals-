@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutUs.Designer.cs">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Add Expense.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     <Compile Include="TranspoExpenses.Designer.cs">
       <DependentUpon>TranspoExpenses.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AboutUs.resx">
+      <DependentUpon>AboutUs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Add Expense.resx">
       <DependentUpon>Add Expense.cs</DependentUpon>
     </EmbeddedResource>
@@ -292,6 +301,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\searchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carloWithBG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\russelNoBg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ramzNoBG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

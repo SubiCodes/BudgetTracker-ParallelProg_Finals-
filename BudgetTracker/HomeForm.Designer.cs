@@ -171,6 +171,7 @@
             // 
             // label5
             // 
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(868, 605);
@@ -178,6 +179,7 @@
             this.label5.Size = new System.Drawing.Size(93, 63);
             this.label5.TabIndex = 14;
             this.label5.Text = "About Us / Developers";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // pictureBox1
             // 

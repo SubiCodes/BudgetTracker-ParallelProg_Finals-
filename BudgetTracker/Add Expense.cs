@@ -21,7 +21,10 @@ namespace BudgetTracker
         {
             InitializeComponent();
         }
+        //Initialize the Methods Class
         MySQLMethods Methods = new MySQLMethods();
+
+        //Upon load set the page to have Hints and Setup border on button
         private void Add_Expense_Load(object sender, EventArgs e)
         {
             SetBorderColorButton(btn_AddExpense, ColorTranslator.FromHtml("#6A0DAD"));
@@ -36,8 +39,9 @@ namespace BudgetTracker
             txt_Price.Text = "(e.g. \"123.45\")";
             txt_Date.Text = "YYYY-MM-DD";
             txt_Description.Text = "(e.g. \"This is an example of a description\")";
-
         }
+
+        //Set the border method
         private void SetBorderColorButton(Button button, Color color)
         {
             button.FlatStyle = FlatStyle.Flat;
@@ -45,6 +49,7 @@ namespace BudgetTracker
             button.FlatAppearance.BorderColor = color;
         }
 
+        //when the cancel is clicked close the form and set the set the text box to empty
         private void btn_Cancel_Click(object sender, EventArgs e)
         {
             txt_Date.Text = "";
@@ -54,13 +59,14 @@ namespace BudgetTracker
             Visible = false;
         }
 
+        //checks if the date format is valid
         private bool DateChecker(String Date)
         {
             DateTime ParsedDate;
             return DateTime.TryParseExact(Date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out ParsedDate);
         }
 
-
+        //Add the expense to the Database based on the user input
         private void btn_AddExpense_Click(object sender, EventArgs e)
         {
             String Title = txt_Title.Text;
@@ -70,7 +76,7 @@ namespace BudgetTracker
             String Type = null;
 
           
-
+            //set the type depending on the user option
             if (rb_Food.Checked) { Type = "food_expense";}
             if (rb_Transpo.Checked) { Type = "transpo_expense";}
             if (rb_Savings.Checked) { Type = "savings";}
@@ -78,6 +84,7 @@ namespace BudgetTracker
             if (rb_Bills.Checked) { Type = "bills";}
             if (rb_Others.Checked) { Type = "other_expense";}
 
+            //check if all inputs are valid
             if (!Double.TryParse(txt_Price.Text, out Price))
             {
                 MessageBox.Show("Input an Integer or a Double for the Price!","Reading Price Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -102,6 +109,7 @@ namespace BudgetTracker
                 return;
             }
 
+            //start adding it to the database if all match the requirements
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
             string Query = $"INSERT INTO `{Type}` (`Title`, `Price`, `Date`, `Description`) VALUES (@Title, @Price, @Date, @Description)";
 
@@ -124,6 +132,7 @@ namespace BudgetTracker
                 MessageBox.Show("Error: " + ex.Message);
             }
 
+            //after adding everything set it all back to empty and close the form
             txt_Date.Text = "";
             txt_Title.Text = "";
             txt_Price.Text = "";
@@ -131,6 +140,7 @@ namespace BudgetTracker
             Visible = false;
         }
 
+        //remove hint if the textbox is pressed
         private void txt_Title_Enter(object sender, EventArgs e)
         {
             if (txt_Title.Text == "(e.g. \"Title\")")
@@ -140,6 +150,7 @@ namespace BudgetTracker
             }
         }
 
+        //if user leave the textbox and there is no input show the hint
         private void txt_Title_Leave(object sender, EventArgs e)
         {
             if (txt_Title.Text == "")
@@ -149,6 +160,7 @@ namespace BudgetTracker
             }
         }
 
+        //remove hint if the textbox is pressed
         private void txt_Price_Enter(object sender, EventArgs e)
         {
             if (txt_Price.Text == "(e.g. \"123.45\")")
@@ -158,6 +170,7 @@ namespace BudgetTracker
             }
         }
 
+        //if user leave the textbox and there is no input show the hint
         private void txt_Price_Leave(object sender, EventArgs e)
         {
             if (txt_Price.Text == "")
@@ -167,6 +180,7 @@ namespace BudgetTracker
             }
         }
 
+        //remove hint if the textbox is pressed
         private void txt_Date_Enter(object sender, EventArgs e)
         {
             if (txt_Date.Text == "YYYY-MM-DD")
@@ -176,6 +190,7 @@ namespace BudgetTracker
             }
         }
 
+        //if user leave the textbox and there is no input show the hint
         private void txt_Date_Leave(object sender, EventArgs e)
         {
             if (txt_Date.Text == "")
@@ -185,6 +200,7 @@ namespace BudgetTracker
             }
         }
 
+        //remove hint if the textbox is pressed
         private void txt_Description_Enter(object sender, EventArgs e)
         {
             if (txt_Description.Text == "(e.g. \"This is an example of a description\")")
@@ -194,6 +210,7 @@ namespace BudgetTracker
             }
         }
 
+        //if user leave the textbox and there is no input show the hint
         private void txt_Description_Leave(object sender, EventArgs e)
         {
             if (txt_Description.Text == "")

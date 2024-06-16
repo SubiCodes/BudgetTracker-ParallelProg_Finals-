@@ -16,6 +16,7 @@ namespace BudgetTracker
 
     internal class MySQLMethods
     {
+        //sets up the preferred design on the table
         public void InitializeDataGridView(DataGridView Grid, Color HeaderColor)
         {
             Grid.ColumnHeadersDefaultCellStyle.BackColor = HeaderColor;
@@ -30,6 +31,8 @@ namespace BudgetTracker
             Grid.SelectionChanged += (s, e) => { Grid.ClearSelection(); };
             Grid.MouseWheel += DataGridView_MouseWheel;
         }
+
+        //allow scrolling without the scrollbar
         private void DataGridView_MouseWheel(object sender, MouseEventArgs e)
         {
             DataGridView dataGridView = sender as DataGridView;
@@ -43,6 +46,8 @@ namespace BudgetTracker
                 }
             }
         }
+
+        //load all the data from the table input and save it to the datagrid input
         public void LoadAllData(String Table, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker;Convert Zero Datetime=True";
@@ -74,6 +79,7 @@ namespace BudgetTracker
 
         }
 
+        //selects all from the specific table where the user input match the title
         public void SearchTitle(String Table, String Title, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -103,6 +109,8 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+
+        //selects all from the specific table where the user input match the date
         public void SearchDate(String Table, String Date, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -132,6 +140,8 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+
+        //order the data specifically depending on the parameter
         public void OrderedData(String Query, DataGridView Grid)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -160,7 +170,7 @@ namespace BudgetTracker
         }
 
         
-      
+      //if there is a search and the user want to arrange them you go here
         public void OrderedDataWithTitleByDate(String Table, String Title, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -190,6 +200,8 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+
+        //if there is a search and the user want to arrange them by price you go here
         public void OrderedDataWithTitleByPrice(String Table, String Title, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -218,6 +230,8 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+
+        //if there is a date and the user want to arrange them by price you go here
         public void OrderedDataWithDateByPrice(String Table, String Date, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -248,6 +262,8 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+
+        //if there is a date and the user want to arrange them by letter you go here
         public void OrderedDataWithDateByTitle(String Table, String Date, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -278,6 +294,8 @@ namespace BudgetTracker
                 MessageBox.Show("Error Occured Loading the data: " + ex.Message);
             }
         }
+
+        //when there is both title and date searches use this method
         public void OrderedDateAndTitleByPrice(String Table, String Title, String Date, DataGridView Grid, String Order)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -310,6 +328,7 @@ namespace BudgetTracker
             }
         }
 
+        //allows deletion of selected expense
         public void Delete(String Table, String Title, String Date)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";
@@ -322,6 +341,7 @@ namespace BudgetTracker
             CMD.ExecuteNonQuery();
         }
 
+        //checks if the title with the same date already exist
         public bool CheckExist(String Table, String Title, String Date)
         {
             String Connection = "server=localhost;user id =root;password=;database=budget_tracker";

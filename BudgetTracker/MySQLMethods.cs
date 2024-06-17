@@ -69,8 +69,6 @@ namespace BudgetTracker
                         column.Visible = false;
                     }
                 }
-
-
             }
             catch (Exception ex)
             {

@@ -124,14 +124,14 @@ namespace BudgetTracker
             if(otherExpenseToday.Result >= 10000)
             {
                 UpdateLabel(lbl_OtherToday, "₱ " + otherExpenseToday.Result.ToString("F2"));
-                lbl_OtherToday.Font = new System.Drawing.Font(lbl_MonthBills.Font.FontFamily, 12);
+                lbl_OtherToday.Font = new System.Drawing.Font(lbl_OtherToday.Font.FontFamily, 12);
             }
             else
             {
                 if (otherExpenseToday.Result >= 100000)
                 {
                     UpdateLabel(lbl_OtherToday, "₱ " + otherExpenseToday.Result.ToString("F2"));
-                    lbl_OtherToday.Font = new System.Drawing.Font(lbl_MonthBills.Font.FontFamily, 10);
+                    lbl_OtherToday.Font = new System.Drawing.Font(lbl_OtherToday.Font.FontFamily, 10);
                 }
                 else
                 {
@@ -141,12 +141,12 @@ namespace BudgetTracker
 
             if (savingsThisYear.Result >= 100000)
             {
-                UpdateLabel(lbl_Savings, "₱ " + otherExpenseToday.Result.ToString("F2"));
+                UpdateLabel(lbl_Savings, "₱ " + savingsThisYear.Result.ToString("F2"));
                 lbl_Savings.Font = new System.Drawing.Font(lbl_MonthBills.Font.FontFamily, 27);
             }
             else
             {
-                UpdateLabel(lbl_Savings, "₱ " + otherExpenseToday.Result.ToString("F2"));
+                UpdateLabel(lbl_Savings, "₱ " + savingsThisYear.Result.ToString("F2"));
             }
         }
 
